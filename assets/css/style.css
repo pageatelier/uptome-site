@@ -263,13 +263,13 @@ p { margin-top: 0; }
   top:20px;
   left: 22px;
   bottom: 20px;
-  color: #fff;
+  color: var(--ivory);
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: .18em;
 }
 .menu-feature__copy {
-  padding: 74px 52px 56px;
+  padding: 90px 52px 56px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -754,7 +754,7 @@ p { margin-top: 0; }
 
   .menu-feature { grid-template-columns: 1fr; }
   .menu-feature__image { min-height: 130vw; }
-  .menu-feature__copy { min-height: 520px; padding: 62px 24px 42px; }
+  .menu-feature__copy { min-height: 520px; padding: 70px 24px 70px; }
   .menu-feature__copy h2 { font-size: clamp(54px,17vw,70px); }
 
   .manifesto { min-height: 560px; }
@@ -1278,12 +1278,14 @@ p { margin-top: 0; }
 
   .menu-feature__copy {
     min-height: 450px;
-    padding: 62px 24px 34px;
+    padding: 62px 24px 70px;
+    line-height:.88;
   }
 
   .menu-feature__copy h2 {
     font-size: clamp(52px, 16vw, 68px);
     line-height: .93;
+        max-width: 5.2ch;
   }
 
   .menu-feature__copy .editorial-link {
