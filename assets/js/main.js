@@ -1,17 +1,40 @@
+
 const toggle = document.querySelector(".menu-toggle");
 const mobileMenu = document.querySelector(".mobile-menu");
 
-toggle?.addEventListener("click", () => {
-  const isOpen = mobileMenu.classList.toggle("is-open");
-  toggle.setAttribute("aria-expanded", String(isOpen));
-  toggle.textContent = isOpen ? "Close" : "Menu";
-  document.body.classList.toggle("menu-open", isOpen);
-});
-
-mobileMenu?.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    mobileMenu.classList.remove("is-open");
-    toggle?.setAttribute("aria-expanded", "false");
-    document.body.classList.remove("menu-open");
+if (toggle && mobileMenu) {
+  toggle.addEventListener("click", () => {
+    const isOpen = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", String(!isOpen));
+    toggle.textContent = isOpen ? "Menu" : "Close";
+    mobileMenu.classList.toggle("is-open", !isOpen);
+    mobileMenu.setAttribute("aria-hidden", String(isOpen));
+    document.body.classList.toggle("menu-open", !isOpen);
   });
-});
+
+  mobileMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.textContent = "Menu";
+      mobileMenu.classList.remove("is-open");
+      mobileMenu.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("menu-open");
+    });
+  });
+}
+
+const revealItems = document.querySelectorAll(".reveal");
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.14 });
+
+  revealItems.forEach(item => observer.observe(item));
+} else {
+  revealItems.forEach(item => item.classList.add("is-visible"));
+}
