@@ -1357,3 +1357,87 @@ p { margin-top: 0; }
     transition: none;
   }
 }
+
+/* =========================================
+   MOBILE FINAL POLISH
+   - Shorter intro dead space
+   - Tighter manifesto pacing
+   - Brighter, cleaner footer copy
+========================================= */
+@media (max-width: 850px) {
+  /* Intro: reduce the long ivory gap before the first menu image */
+  .intro {
+    padding-top: 78px;
+    padding-bottom: 58px;
+  }
+
+  .intro__illustration {
+    margin-top: 18px;
+    margin-bottom: 16px;
+  }
+
+  .intro__bottom {
+    margin-top: 0;
+  }
+
+  /* Manifesto: slightly shorter and visually lifted */
+  .manifesto {
+    min-height: 440px;
+    padding: 86px 24px 92px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .manifesto__small {
+    margin: 0 0 26px;
+  }
+
+  .manifesto h2 {
+    margin-top: 0;
+    transform: translateY(-4px);
+  }
+
+  /* Visit card: slightly less vertical weight */
+  .visit {
+    min-height: 640px;
+    padding: 58px 22px;
+  }
+
+  .visit__card {
+    padding: 40px 28px 30px;
+  }
+
+  .visit__card h2 {
+    margin-bottom: 32px;
+  }
+
+  /* Footer: improve readability and reduce excessive spacing */
+  .site-footer {
+    padding: 38px 24px 24px;
+  }
+
+  .site-footer__brand {
+    padding-bottom: 42px;
+  }
+
+  .site-footer__details {
+    padding-bottom: 44px;
+    gap: 26px;
+  }
+
+  .site-footer__info p {
+    color: rgba(255,255,255,.78);
+    line-height: 1.75;
+  }
+
+  .site-footer__links a {
+    color: rgba(255,255,255,.94);
+  }
+
+  .site-footer__bottom small,
+  .site-footer__bottom a {
+    color: rgba(255,255,255,.66);
+  }
+}
