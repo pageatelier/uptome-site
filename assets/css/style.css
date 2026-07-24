@@ -1441,3 +1441,45 @@ p { margin-top: 0; }
     color: rgba(255,255,255,.66);
   }
 }
+
+/* =========================================
+   FIX HORIZONTAL OVERFLOW
+========================================= */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
+main,
+.hero,
+.subhero,
+.section,
+.menu-feature,
+.manifesto,
+.visit,
+.site-footer {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.hero {
+  position: relative;
+  contain: paint;
+}
+
+@supports (overflow: clip) {
+  html,
+  body,
+  main,
+  .hero,
+  .subhero {
+    overflow-x: clip;
+  }
+}
