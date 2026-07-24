@@ -38,3 +38,11 @@ if ("IntersectionObserver" in window) {
 } else {
   revealItems.forEach(item => item.classList.add("is-visible"));
 }
+
+// assets/js/main.js
+const setInitialViewportHeight = () => {
+  const viewportHeight = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${viewportHeight}px`);
+};
+
+setInitialViewportHeight();

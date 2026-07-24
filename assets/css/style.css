@@ -893,9 +893,9 @@ p { margin-top: 0; }
 }
 @media (max-width: 850px) {
   .hero {
-    height: 100svh;
-    min-height: 100svh;
-    overflow: clip;
+    height: calc(var(--vh, 1vh) * 100);
+    min-height: calc(var(--vh, 1vh) * 100);
+    overflow: hidden;
   }
 
   .hero__media--home {
