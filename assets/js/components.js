@@ -46,14 +46,14 @@ const header = `
 const footer = `
   <footer class="site-footer">
     <div class="site-footer__top">
-      <a class="wordmark site-footer__logo" href="index.html">UPTOME</a>
-      <p class="site-footer__intro">서울 연남동의<br>호주식 모던 다이닝</p>
+      <a class="wordmark site-footer__logo" href="index.html">Uptome</a>
+      
     </div>
 
     <div class="site-footer__middle">
       <div class="site-footer__info">
-        <p>서울특별시 마포구 성미산로 165-6, 1층</p>
-        <p>매일 12:00 — 22:00 · 브레이크 타임 없음</p>
+          <p>서울특별시 마포구 성미산로 165-6, 1층<br>1F, 165-6 Seongmisan-ro, Mapo-gu, Seoul</p>
+          <p>Open daily 12:00 — 22:00<br>All dining is by advance reservation only.</p>
       </div>
       <div class="site-footer__links">
         <a href="https://www.instagram.com/up_to_me_official" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
@@ -64,7 +64,7 @@ const footer = `
 
     <div class="site-footer__bottom">
       <small>© ${year} UPTOME</small>
-      <a href="index.html">KR</a>
+     
     </div>
   </footer>
 `;
