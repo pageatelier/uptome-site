@@ -6,7 +6,7 @@ const headerClass = isHome && !isEnglish ? "site-header" : "site-header site-hea
 const header = `
   <header class="${headerClass}">
     <a class="wordmark" href="${root}index.html" aria-label="UPTOME 홈">
-      UP<span>TO</span>ME
+      UPTOME
     </a>
     <nav class="site-nav" aria-label="주요 메뉴">
       <a href="${root}about.html">About</a>
@@ -31,10 +31,10 @@ const header = `
 
 const footer = `
   <footer class="site-footer">
-    <a class="wordmark site-footer__logo" href="${root}index.html">UP<span>TO</span>ME</a>
+    <a class="wordmark site-footer__logo" href="${root}index.html">UPTOME</a>
     <p>Australian-inspired modern dining<br>in Yeonnam, Seoul.</p>
     <div class="site-footer__links">
-      <a href="#" aria-label="업투미 인스타그램">Instagram</a>
+      <a href="https://www.instagram.com/up_to_me_official" aria-label="업투미 인스타그램">Instagram</a>
       <a href="mailto:hello@example.com">Contact</a>
     </div>
     <small>© 2026 UPTOME</small>
