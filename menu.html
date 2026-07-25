@@ -3,105 +3,267 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="업투미의 계절 코스와 일반식, 비건식 메뉴 안내">
+
+  <meta
+    name="description"
+    content="업투미의 런치, 디너, 비건 코스와 와인 리스트를 확인해 보세요."
+  >
   <title>Menu | UPTOME</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Noto+Serif+KR:wght@400;500&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,400;0,500;1,500&display=swap" rel="stylesheet">
+ 
+
+  <link
+    rel="stylesheet"
+    crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+  >
+
+  <link
+    rel="stylesheet"
+    crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+  >
+
   <link rel="stylesheet" href="assets/css/common.css">
   <link rel="stylesheet" href="assets/css/menu.css">
+
   <script src="assets/js/components.js" defer></script>
   <script src="assets/js/main.js" defer></script>
 </head>
-<body>
+
+<body class="menu-body">
   <div data-site-header></div>
 
-  <main>
-    <section class="subhero subhero--menu">
-      <div class="subhero__media" aria-hidden="true"></div>
-      <div class="subhero__shade" aria-hidden="true"></div>
-      <div class="subhero__copy reveal">
-        <h1>Menu</h1>
-      </div>
-    </section>
-
-    <section class="menu-intro section">
-      <div>
-        <h2 class="reveal">Summer ’26</h2>
-        <p class="menu-intro__lead reveal">현재 계절과 수급에 따라 메뉴 구성은 달라질 수 있습니다.</p>
-      </div>
-    </section>
-
-    <section class="course-section course-section--reverse">
-      <div class="course-section__image course-section__image--vegan" aria-hidden="true"></div>
-      <div class="course-panel course-panel--light">
-        <div class="course-panel__heading">
-          <h2>Vegan<br>Course</h2>
-          <strong>₩ 00,000</strong>
+  <main class="menu-page">
+    <!-- 01. INTRO -->
+    <section class="menu-intro" aria-labelledby="menu-title">
+      <div class="menu-shell">
+        <div class="menu-intro__top">
+          <h1 id="menu-title" class="reveal">
+            Choose your<br>
+            <span class="italic">way to the table.</span>
+          </h1>
         </div>
-        <ol class="course-list">
-          <li><span>01</span><p>Welcome bite</p></li>
-          <li><span>02</span><p>Farm vegetable</p></li>
-          <li><span>03</span><p>Seasonal grain</p></li>
-          <li><span>04</span><p>Plant-based main</p></li>
-          <li><span>05</span><p>Seasonal dessert</p></li>
-          <li><span>06</span><p>Tea or coffee</p></li>
-        </ol>
-      </div>
-    </section>
-    <section class="course-section">
-      <div class="course-section__image course-section__image--lunch" aria-hidden="true"></div>
-      <div class="course-panel">
-        <div class="course-panel__heading">
-          <h2>Lunch<br>Course</h2>
-          <strong>₩ 00,000</strong>
+
+        <div class="menu-intro__bottom">
+          <p class="menu-intro__note reveal">
+            업투미의 런치, 디너, 비건 코스와 와인 리스트를
+            파일로 확인하실 수 있습니다.
+            메뉴는 계절과 식재료 수급에 따라 변경될 수 있으며,
+            가장 최근에 업데이트된 파일이 제공됩니다.
+          </p>
         </div>
-        <ol class="course-list">
-          <li><span>01</span><p>Welcome bite</p></li>
-          <li><span>02</span><p>Seasonal vegetable</p></li>
-          <li><span>03</span><p>Seafood</p></li>
-          <li><span>04</span><p>Main dish</p></li>
-          <li><span>05</span><p>Seasonal dessert</p></li>
-          <li><span>06</span><p>Tea or coffee</p></li>
-        </ol>
       </div>
     </section>
 
-    <section class="course-section course-section--reverse">
-      <div class="course-section__image course-section__image--dinner" aria-hidden="true"></div>
-      <div class="course-panel course-panel--light">
-        <div class="course-panel__heading">
-          <h2>Dinner<br>Course</h2>
-          <strong>₩ 00,000</strong>
+    <!-- 02. DOWNLOAD MENUS -->
+    <section class="menu-downloads" aria-labelledby="download-title">
+      <div class="menu-shell">
+
+        <div class="menu-download-grid">
+          <!-- Lunch -->
+          <a
+            class="menu-file-card menu-file-card--lunch reveal"
+            href="assets/files/uptome-lunch-menu.pdf"
+            download
+            aria-label="업투미 런치 메뉴 PDF 다운로드"
+          >
+            <div class="menu-file-card__image" aria-hidden="true"></div>
+            <div class="menu-file-card__shade" aria-hidden="true"></div>
+
+            <div class="menu-file-card__top">
+              <span>PDF</span>
+            </div>
+
+            <div class="menu-file-card__bottom">
+              <div>
+                
+                <h3>Lunch<br>Menu</h3>
+              </div>
+
+              <span class="menu-file-card__action">
+                Download
+                <span aria-hidden="true">↓</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- Dinner -->
+          <a
+            class="menu-file-card menu-file-card--dinner reveal"
+            href="assets/files/uptome-dinner-menu.pdf"
+            download
+            aria-label="업투미 디너 메뉴 PDF 다운로드"
+          >
+            <div class="menu-file-card__image" aria-hidden="true"></div>
+            <div class="menu-file-card__shade" aria-hidden="true"></div>
+
+            <div class="menu-file-card__top">
+            
+              <span>PDF</span>
+            </div>
+
+            <div class="menu-file-card__bottom">
+              <div>
+                
+                <h3>Dinner<br>Menu</h3>
+              </div>
+
+              <span class="menu-file-card__action">
+                Download
+                <span aria-hidden="true">↓</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- Vegan -->
+          <a
+            class="menu-file-card menu-file-card--vegan reveal"
+            href="assets/files/uptome-vegan-menu.pdf"
+            download
+            aria-label="업투미 비건 메뉴 PDF 다운로드"
+          >
+            <div class="menu-file-card__image" aria-hidden="true"></div>
+            <div class="menu-file-card__shade" aria-hidden="true"></div>
+
+            <div class="menu-file-card__top">
+             
+              <span>PDF</span>
+            </div>
+
+            <div class="menu-file-card__bottom">
+              <div>
+                
+                <h3>Vegan<br>Menu</h3>
+              </div>
+
+              <span class="menu-file-card__action">
+                Download
+                <span aria-hidden="true">↓</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- Wine -->
+          <a
+            class="menu-file-card menu-file-card--wine reveal"
+            href="assets/files/uptome-wine-list.pdf"
+            download
+            aria-label="업투미 와인 리스트 PDF 다운로드"
+          >
+            <div class="menu-file-card__image" aria-hidden="true"></div>
+            <div class="menu-file-card__shade" aria-hidden="true"></div>
+
+            <div class="menu-file-card__top">
+              
+              <span>PDF</span>
+            </div>
+
+            <div class="menu-file-card__bottom">
+              <div>
+              
+                <h3>Wine<br>List</h3>
+              </div>
+
+              <span class="menu-file-card__action">
+                Download
+                <span aria-hidden="true">↓</span>
+              </span>
+            </div>
+          </a>
         </div>
-        <ol class="course-list">
-          <li><span>01</span><p>Welcome bite</p></li>
-          <li><span>02</span><p>Farm vegetable</p></li>
-          <li><span>03</span><p>Seasonal grain</p></li>
-          <li><span>04</span><p>Plant-based main</p></li>
-          <li><span>05</span><p>Seasonal dessert</p></li>
-          <li><span>06</span><p>Tea or coffee</p></li>
-        </ol>
+
+        <p class="menu-downloads__help reveal">
+          다운로드가 열리지 않을 경우 파일 링크를 길게 누르거나
+          새 탭에서 열어 확인해 주세요.
+        </p>
       </div>
     </section>
 
-    <section class="notice-section section">
-      <div>
-        <p class="eyebrow">Please note</p>
-        <h2>Before your visit.</h2>
-      </div>
-      <div class="notice-list">
-        <article><span>01</span><p>메뉴는 계절과 식재료 수급 상황에 따라 변경될 수 있습니다.</p></article>
-        <article><span>02</span><p>알레르기나 드시지 못하는 식재료는 예약 시 미리 알려주세요.</p></article>
-        <article><span>03</span><p>비건 코스는 사전 예약을 권장합니다.</p></article>
+    <!-- 03. NOTICE -->
+    <section class="menu-notice" aria-labelledby="notice-title">
+      <div class="menu-shell menu-notice__inner">
+        <div class="menu-notice__heading">
+
+          <h2 id="notice-title" class="reveal">
+            Before<br>
+            <span class="italic">your visit.</span>
+          </h2>
+        </div>
+
+        <div class="menu-notice__list">
+          <article class="reveal">
+            <span>01</span>
+            <p>
+              메뉴 구성과 가격은 계절 및 식재료 수급 상황에 따라
+              예고 없이 변경될 수 있습니다.
+            </p>
+          </article>
+
+          <article class="reveal">
+            <span>02</span>
+            <p>
+              알레르기나 드시지 못하는 식재료가 있다면
+              예약 시 미리 알려주세요.
+            </p>
+          </article>
+
+          <article class="reveal">
+            <span>03</span>
+            <p>
+              캐치테이블 혹은 네이버 예약을 통해 원하시는 코스를 선택해주세요.
+            </p>
+          </article>
+
+          <article class="reveal">
+            <span>04</span>
+            <p>
+              와인 리스트의 일부 품목은 재고에 따라 변경될 수 있으며,
+              매장에서 현재 이용 가능한 와인을 안내해 드립니다.
+            </p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="page-cta">
-      <div>
-        <h2>Your table<br>is waiting.</h2>
+    <!-- 04. RESERVATION CTA -->
+    <section class="menu-reservation" aria-labelledby="reservation-title">
+      <div class="menu-reservation__image" aria-hidden="true"></div>
+      <div class="menu-reservation__shade" aria-hidden="true"></div>
+
+      <div class="menu-reservation__content">
+        <p class="eyebrow eyebrow--light reveal">Reservations</p>
+
+        <h2 id="reservation-title" class="reveal">
+          Your table,<br>
+          <span class="italic">when you are ready.</span>
+        </h2>
+
+        <div class="menu-reservation__actions reveal">
+          <a
+            class="cta-button"
+            href="https://app.catchtable.co.kr/ct/shop/uptome?from"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>한국어로 예약</span>
+            <span class="button-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a
+            class="outline-button"
+            href="https://www.catchtable.net/explore/shop/uptome"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Reserve in English</span>
+            <span class="button-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
       </div>
-      <a class="outline-button" href="reservation.html">Reserve now <span aria-hidden="true">↗</span></a>
     </section>
   </main>
 

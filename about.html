@@ -3,57 +3,242 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="업투미의 이야기와 오너 셰프, 농장에서 식탁까지 이어지는 다이닝 철학">
+
+  <meta
+    name="description"
+    content="업투미의 브랜드 이야기, 오너 셰프, 직접 가꾸는 농장과 계절의 메뉴를 소개합니다."
+  >
   <title>About | UPTOME</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Noto+Serif+KR:wght@400;500&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,400;0,500;1,500&display=swap" rel="stylesheet">
+ 
+  <link
+    rel="stylesheet"
+    crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+  >
+
   <link rel="stylesheet" href="assets/css/common.css">
-<link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+
   <script src="assets/js/components.js" defer></script>
   <script src="assets/js/main.js" defer></script>
 </head>
-<body>
+
+<body class="about-body">
   <div data-site-header></div>
 
-  <main>
-    <section class="subhero subhero--about">
-      <div class="subhero__media" aria-hidden="true"></div>
-      <div class="subhero__shade" aria-hidden="true"></div>
-      <div class="subhero__copy reveal">
-        <h1>About</h1>
-      </div>
-    </section>
+  <main class="about-page">
+    <!-- 01. BRAND INTRO -->
+    <section class="about-intro" aria-labelledby="about-title">
+      <div class="about-shell">
+        <div class="about-intro__headline">
+          <h1 id="about-title" class="reveal">
+            Open by nature.<br>
+            <span class="italic">Made for the table.</span>
+          </h1>
+        </div>
 
-    <section class="story-block section">
-      <div class="story-block__content">
-        <h2 class="reveal">A dining room built<br>around openness.</h2>
-        <div class="story-block__grid">
-          <div class="body-copy reveal">
-            <p>업투미는 호주에서 경험한 자유로운 미식 문화에서 출발했습니다. 일반식과 비건식을 한 식탁에서 자연스럽게 즐기고, 계절마다 달라지는 재료를 새로운 시선으로 풀어냅니다.</p>
-            <p>격식보다 편안함을, 익숙함보다 호기심을 선택하며 매 시즌 업투미다운 코스를 선보입니다.</p>
+        <div class="brand-visual reveal">
+          <figure class="brand-visual__main">
+            <img
+              src="assets/images/about-brand.webp"
+              alt="업투미 다이닝 공간과 테이블"
+            >
+          </figure>
+
+        </div>
+
+        <div class="about-intro__bottom">
+
+          <div class="about-intro__body reveal">
+            <p>
+              업투미는 호주에서 경험한 자유로운 미식 문화에서 출발했습니다. 
+              일반식과 비건식을 한 식탁에서 자연스럽게 즐기고, 계절마다 달라지는 재료를 새로운 시선으로 풀어냅니다.
+            </p>
+            <p>
+              격식보다 편안함을, 익숙함보다 호기심을 선택하며 매 시즌 업투미다운 코스를 선보입니다.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="split-feature">
-      <div class="split-feature__image split-feature__image--chef" aria-hidden="true"></div>
-      <div class="split-feature__copy">
-        <h2>From Australia,<br>with a point of view.</h2>
-        <p>호주 르 꼬르동 블루에서 요리의 기반을 다진 오너 셰프는 시드니의 다채로운 식문화와 식재료를 경험하며 자신만의 감각을 쌓아왔습니다.</p>
-        <p>2020년 업투미를 시작한 이후, 계절과 재료에 대한 호기심을 한 접시씩 이어가고 있습니다.</p>
+    <!-- 02. CHEF -->
+    <section class="chef-section" aria-labelledby="chef-title">
+      <div class="chef-section__media reveal">
+        <img
+          src="assets/images/chef.webp"
+          alt="업투미 오너 셰프"
+        >
+      </div>
+
+      <div class="chef-section__content">
+        <h2 id="chef-title" class="reveal">
+          From Australia,<br>
+          <span class="italic">with a point of view.</span>
+        </h2>
+
+        <div class="chef-name reveal">
+        <p class="chef-name__role">Owner Chef</p>
+        <p class="chef-name__name">Minhoo Kim</p>
+       </div>
+
+        <div class="chef-section__text reveal">
+          <p>
+            호주 르 꼬르동 블루에서 요리의 기반을 다진 오너 셰프는
+            시드니의 다채로운 식문화와 식재료를 경험하며 자신만의
+            감각을 쌓아왔습니다.
+          </p>
+          <p> 2020년 업투미를 시작한 이후 
+            계절과 재료에 대한 호기심을 계속해서이어가고 있습니다.
+          </p>
+        </div>
       </div>
     </section>
 
-    <section class="page-cta">
-      <div>
-        <h2>Discover the<br>current season.</h2>
-      </div>
-      <a class="outline-button" href="menu.html">View menu <span aria-hidden="true">↗</span></a>
-    </section>
-  </main>
+    <!-- 03. FARM -->
+    <section class="farm-section" aria-labelledby="farm-title">
+      <div class="about-shell">
+        <div class="farm-section__heading">
+          <h2 id="farm-title" class="reveal">
+            Grown close.<br>
+            <span class="italic">Served in season.</span>
+          </h2>
+        </div>
 
+        <div class="farm-section__grid">
+          <div class="farm-section__copy reveal">
+            <div class="farm-section__body">
+              <p>
+                업투미는 직접 기른 허브와 채소를 계절에 맞춰 사용합니다.
+                제철 식재료가 가장 좋은 상태일 때 수확해,
+                매 시즌 달라지는 코스에 자연스럽게 담아냅니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="farm-section__visual reveal">
+            <figure class="farm-section__image">
+              <img
+                src="assets/images/farm.webp"
+                alt="업투미 농장에서 자라는 채소"
+              >
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. PRESS & FEATURES -->
+    <section class="press-section" aria-labelledby="press-title">
+      <div class="about-shell">
+        <div class="press-section__heading">
+          <h2 id="press-title" class="reveal">
+            UPTOME,<br>
+            <span class="italic">seen and shared.</span>
+          </h2>
+
+        </div>
+
+        <div class="press-grid">
+          <a
+            class="press-card press-card--main reveal"
+            href="https://youtu.be/MLYLSZdZcvs?si=NpPR43KMM76XE1CA"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="샘 해밍턴 유튜브 영상 보기: 파인다이닝 오너 셰프가 추천하는 호주 음식"
+          >
+            <div class="press-card__media">
+              <img
+                src="https://img.youtube.com/vi/MLYLSZdZcvs/maxresdefault.jpg"
+                onerror="this.onerror=null;this.src='https://img.youtube.com/vi/MLYLSZdZcvs/hqdefault.jpg';"
+                alt="파인다이닝 오너 셰프가 추천하는 호주 음식 영상 썸네일"
+                loading="lazy"
+              >
+              <span class="press-card__play" aria-hidden="true">Play film</span>
+            </div>
+
+            <div class="press-card__info">
+              <div>
+                <p class="press-card__meta">Sam Hammington · YouTube</p>
+                <h3>
+                  A taste of Australia,<br>
+                  served in Seoul.
+                </h3>
+              </div>
+            </div>
+          </a>
+
+          <div class="press-grid__side">
+            <a
+              class="press-card press-card--video reveal"
+              href="https://youtu.be/_oEK4aoZLng?si=tfKGYy7RPBQguS8e"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="샘 해밍턴 유튜브 영상 보기: 한국에서 맛본 호주 전통 음식의 맛은"
+            >
+              <div class="press-card__media">
+                <img
+                  src="https://img.youtube.com/vi/_oEK4aoZLng/maxresdefault.jpg"
+                  onerror="this.onerror=null;this.src='https://img.youtube.com/vi/_oEK4aoZLng/hqdefault.jpg';"
+                  alt="한국에서 맛본 호주 전통 음식의 맛은 영상 썸네일"
+                  loading="lazy"
+                >
+                <span class="press-card__play" aria-hidden="true">Play film</span>
+              </div>
+
+              <div class="press-card__info">
+                <div>
+                  <p class="press-card__meta">Sam Hammington · YouTube</p>
+                  <h3>
+                    Australian classics,<br>
+                    discovered at UPTOME.
+                  </h3>
+                </div>
+              </div>
+            </a>
+
+            <a
+              class="press-card press-card--luxury reveal"
+              href="https://luxury.designhouse.co.kr/magazineView/66050bd9732f2c1f4fec5268"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LUXURY 매거진 업투미 소개 기사 보기: SUPER FOOD"
+            >
+              <div class="press-card__luxury-media">
+                <img
+                  src="assets/images/luxury.webp"
+                  alt="LUXURY 매거진에 소개된 업투미"
+                  loading="lazy"
+                >
+                <div class="press-card__luxury-overlay" aria-hidden="true"></div>
+
+                <div class="press-card__luxury-brand">
+                  <p class="press-card__meta">Featured in LUXURY Magazine</p>
+                </div>
+              </div>
+
+              <div class="press-card__luxury-content">
+                <h3>
+                  Super Food,<br>
+                  an Australian dining<br>
+                  journey in Yeonnam.
+                </h3>
+
+                <span class="press-card__action">
+                  Read article
+                  <span aria-hidden="true">→</span>
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
   <div data-site-footer></div>
 </body>
 </html>

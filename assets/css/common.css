@@ -113,8 +113,8 @@ p {
 .site-header--dark {
   position: relative;
   inset: auto;
-  background: var(--ivory);
-  color: var(--navy);
+  background: transparent;
+  color: var(--charcoal);
 }
 
 /* Keep the menu button visible over the navy mobile menu. */
@@ -927,3 +927,5 @@ body.menu-open {
     overscroll-behavior: none;
   }
 }
+
+
