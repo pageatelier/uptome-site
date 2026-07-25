@@ -46,3 +46,9 @@ const setInitialViewportHeight = () => {
 };
 
 setInitialViewportHeight();
+
+document.documentElement.classList.toggle("menu-open", !isOpen);
+document.body.classList.toggle("menu-open", !isOpen);
+
+document.documentElement.classList.remove("menu-open");
+document.body.classList.remove("menu-open");

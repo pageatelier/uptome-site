@@ -120,6 +120,7 @@ p {
 /* Keep the menu button visible over the navy mobile menu. */
 body.menu-open .site-header--dark {
   position: fixed;
+  z-index: 60;
   inset: 0 0 auto;
   width: 100%;
   background: transparent;
