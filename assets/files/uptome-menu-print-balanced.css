@@ -1,0 +1,323 @@
+/* =========================================
+   UPTOME — A4 PRINT MENU / BALANCED VERSION
+========================================= */
+
+:root {
+  --paper: #f7f3ea;
+  --navy: #142440;
+  --terra: #b96750;
+  --sage: #7d876f;
+  --line: #cfc8bb;
+  --muted: #6e706d;
+
+  --font-display: "Gloock", serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-korean: "Noto Serif KR", serif;
+  --font-body: "Pretendard", sans-serif;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* 로고 */
+.logo,
+.brand{
+    font-family: var(--font-logo);
+}
+
+/* Dinner, Lunch 같은 영문 제목 */
+h1,
+h2{
+    font-family: var(--font-title);
+}
+
+/* 한국어 제목 */
+.title-ko{
+    font-family: var(--font-korean);
+}
+
+/* 본문 */
+p,
+li,
+button,
+a{
+    font-family: var(--font-body);
+}
+html,
+body {
+  margin: 0;
+}
+
+body{
+    min-height:100vh;
+    background:#ddd8cf;
+    color:var(--navy);
+    font-family:var(--font-body);
+    -webkit-font-smoothing:antialiased;
+}
+
+.menu-sheet {
+  width: 210mm;
+  height: 297mm;
+  margin: 24px auto;
+  padding: 9mm;
+  overflow: hidden;
+  background: var(--paper);
+  box-shadow: 0 14px 44px rgba(20, 36, 64, 0.14);
+}
+
+.menu-sheet__frame {
+  width: 100%;
+  height: 100%;
+  padding: 13mm 18mm 10mm;
+  overflow: hidden;
+}
+
+/* ---------- Header ---------- */
+
+.menu-header {
+  text-align: center;
+}
+
+.menu-header__mark {
+  width: 18mm;
+  height: 1px;
+  margin: 0 auto 5mm;
+  background: var(--terra);
+}
+
+.menu-header__brand{
+    margin:0;
+    font-family:var(--font-display);
+    font-size:25pt;
+    font-weight:400;
+    line-height:1;
+    letter-spacing:-0.03em;
+}
+.menu-header__season {
+  margin: 3.2mm 0 0;
+  color: var(--terra);
+  font-size: 10pt;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.menu-header h1{
+    margin:7.5mm 0 30px;
+    font-family:var(--font-serif);
+    font-size:28pt;
+    font-weight:500;
+    line-height:.95;
+    letter-spacing:-0.04em;
+}
+.menu-header__course {
+  margin: 3.4mm 0 0;
+  color: var(--sage);
+  font-size: 7pt;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.menu-header__ko {
+  margin: 4mm 0 0;
+  font-family: var(--serif-ko);
+  font-size: 8.8pt;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+
+.menu-rule {
+  width: 100%;
+  height: 1px;
+  margin: 6.5mm 0 6.5mm;
+  background: var(--line);
+}
+
+/* ---------- Menu ---------- */
+
+.menu-list {
+  width: min(100%, 116mm);
+  margin-inline: auto;
+}
+
+.menu-item {
+  text-align: center;
+}
+
+.menu-item + .menu-item {
+  margin-top: 4.45mm;
+}
+
+.menu-item--break {
+  margin-top: 6.2mm !important;
+  padding-top: 6.1mm;
+  border-top: 1px dashed var(--line);
+}
+
+.menu-item__ko {
+  margin: 0;
+  font-size: 9.65pt;
+  font-weight: 500;
+  line-height: 1.24;
+  letter-spacing: -0.025em;
+}
+
+.menu-item__en {
+  margin: 1.2mm 0 0;
+  color: var(--muted);
+  font-family: var(--serif-en);
+  font-size: 8.35pt;
+  line-height: 1.16;
+}
+
+/* Dinner needs slightly tighter rhythm */
+.menu-sheet--dinner .menu-item + .menu-item {
+  margin-top: 3.7mm;
+}
+
+.menu-sheet--dinner .menu-item--break {
+  margin-top: 5.1mm !important;
+  padding-top: 5.1mm;
+}
+
+.menu-sheet--dinner .menu-item__ko {
+  font-size: 9.25pt;
+}
+
+.menu-sheet--dinner .menu-item__en {
+  font-size: 8pt;
+}
+
+/* ---------- Footer ---------- */
+
+.menu-footer {
+  margin-top: 6.5mm;
+  text-align: center;
+}
+
+.menu-rule--footer {
+  margin: 0 0 4.8mm;
+}
+
+.menu-footer > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 6.8pt;
+  line-height: 1.55;
+  letter-spacing: -0.015em;
+}
+
+.menu-footer > p + p {
+  margin-top: 0.5mm;
+}
+
+.menu-footer__brand {
+  margin-top: 4mm;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4mm;
+}
+
+.menu-footer__brand span {
+  color: var(--sage);
+  font-size: 6.2pt;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.14em;
+}
+
+.menu-footer__brand strong {
+  font-family: "Gloock", var(--serif-en);
+  font-size: 8.8pt;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.06em;
+}
+
+/* ---------- Print ---------- */
+
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    width: 210mm;
+    height: 297mm;
+    min-height: 0;
+    overflow: hidden;
+    background: var(--paper);
+  }
+
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .menu-sheet {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 9mm;
+    overflow: hidden;
+    box-shadow: none;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .menu-sheet__frame {
+    height: 279mm;
+    overflow: hidden;
+  }
+}
+
+/* ---------- Mobile preview ---------- */
+
+@media screen and (max-width: 760px) {
+  body {
+    background: var(--paper);
+  }
+
+  .menu-sheet {
+    width: 100%;
+    height: auto;
+    min-height: 100svh;
+    margin: 0;
+    padding: 14px;
+    overflow: visible;
+    box-shadow: none;
+  }
+
+  .menu-sheet__frame {
+    height: auto;
+    min-height: calc(100svh - 28px);
+    padding: 42px 20px 30px;
+    overflow: visible;
+  }
+
+  .menu-list {
+    width: 100%;
+  }
+
+  .menu-item + .menu-item,
+  .menu-sheet--dinner .menu-item + .menu-item {
+    margin-top: 20px;
+  }
+
+  .menu-item--break,
+  .menu-sheet--dinner .menu-item--break {
+    margin-top: 26px !important;
+    padding-top: 26px;
+  }
+}
