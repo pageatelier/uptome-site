@@ -1,0 +1,161 @@
+/* =========================================
+   UPTOME — VISIT
+========================================= */
+
+.visit-info {
+  max-width: 1500px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.visit-info__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--line);
+}
+
+.visit-info__item {
+  min-height: 370px;
+  padding: 40px 32px;
+  background: var(--paper);
+}
+
+.visit-info__item > span {
+  color: var(--sage);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+}
+
+.visit-info__item h2 {
+  margin: 86px 0 24px;
+  font-size: clamp(30px, 2.8vw, 44px);
+  line-height: 1.08;
+  letter-spacing: -.04em;
+}
+
+.visit-info__item p {
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.space-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.space-card {
+  background: var(--paper);
+}
+
+.space-card__image {
+  min-height: 620px;
+  background-position: center;
+  background-size: cover;
+}
+
+.space-card__image--hall {
+  background-image: url("../images/hall1.webp");
+}
+
+.space-card__image--terrace {
+  background-image: url("../images/terrace.webp");
+}
+
+.space-card__copy {
+  padding: 62px 6vw 72px;
+}
+
+.space-card__copy h2 {
+  margin: 0 0 28px;
+  font-size: clamp(48px, 5vw, 74px);
+  line-height: .92;
+}
+
+.space-card__copy p {
+  max-width: 420px;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.group-section {
+  display: grid;
+  grid-template-columns: 1.3fr .7fr;
+  align-items: end;
+  gap: 8vw;
+}
+
+.group-section h2 {
+  margin: 0;
+  font-size: clamp(74px, 9vw, 132px);
+  line-height: .84;
+}
+
+.map-section {
+  height: 520px;
+  background: #d7d2c9;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: grayscale(1) contrast(.9);
+}
+
+@media (max-width: 1100px) {
+  .visit-info__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .visit-info__item {
+    min-height: 280px;
+  }
+
+  .visit-info__item h2 {
+    margin-top: 56px;
+  }
+}
+
+@media (max-width: 850px) {
+  .visit-info {
+    display: block;
+  }
+
+  .visit-info__grid {
+    display: block;
+  }
+
+  .visit-info__item {
+    min-height: 300px;
+    padding: 40px 24px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .space-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .space-card__image {
+    min-height: 115vw;
+  }
+
+  .space-card__copy {
+    padding: 54px 24px 66px;
+  }
+
+  .group-section {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .group-section h2 {
+    font-size: clamp(74px, 22vw, 104px);
+  }
+
+  .map-section {
+    height: 430px;
+  }
+}

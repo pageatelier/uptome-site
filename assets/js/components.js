@@ -37,10 +37,46 @@ const header = `
       <a href="visit.html">Visit</a>
       <a href="reservation.html">Reservation</a>
     </nav>
+
     <div class="mobile-menu__bottom">
-      <a href="https://www.instagram.com/up_to_me_official" target="_blank" rel="noopener noreferrer">Instagram</a>
-    </div>
+  <a
+    class="mobile-menu__instagram"
+    href="https://www.instagram.com/up_to_me_official"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span class="instagram-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24">
+        <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+        <circle cx="12" cy="12" r="4"></circle>
+        <circle cx="17.5" cy="6.5" r="1"></circle>
+      </svg>
+    </span>
+    <span>Instagram</span>
+  </a>
+
+  <div class="mobile-menu__reservation">
+    <a
+      class="mobile-menu__reserve mobile-menu__reserve--primary"
+      href="https://app.catchtable.co.kr/ct/shop/uptome?from"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span>캐치테이블로 예약하기</span>
+      <span aria-hidden="true">→</span>
+    </a>
+
+    <a
+      class="mobile-menu__reserve mobile-menu__reserve--secondary"
+      href="https://www.catchtable.net/explore/shop/uptome"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span>Reserve in English</span>
+      <span aria-hidden="true">→</span>
+    </a>
   </div>
+</div>
 `;
 
 const footer = `
@@ -56,14 +92,15 @@ const footer = `
           <p>Open daily 12:00 — 22:00<br>All dining is by advance reservation only.</p>
       </div>
       <div class="site-footer__links">
-        <a href="https://www.instagram.com/up_to_me_official" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
-        <a href="tel:050714801438">Contact ↗</a>
-        <a href="reservation.html">Reservation ↗</a>
+        <a href="https://www.instagram.com/up_to_me_official" target="_blank" rel="noopener noreferrer">Instagram →</a>
+        <a href="tel:050714801438">Contact →</a>
+        <a href="reservation.html">Reservation →</a>
       </div>
     </div>
 
     <div class="site-footer__bottom">
-      <small>© ${year} UPTOME</small>
+      <small> © 2026 Uptome. All rights reserved.<br>
+  Site by <a href="#">Page Atelier</a>.</small>
      
     </div>
   </footer>

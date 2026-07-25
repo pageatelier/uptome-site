@@ -1,0 +1,152 @@
+/* =========================================
+   UPTOME — RESERVATION
+========================================= */
+
+.booking-section {
+  max-width: 1500px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.booking-section__content h2 {
+  margin: 0;
+  font-size: clamp(60px, 8vw, 116px);
+  line-height: .9;
+}
+
+.booking-buttons {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.booking-buttons a {
+  min-height: 210px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--navy);
+  transition: background .25s ease, color .25s ease;
+}
+
+.booking-buttons a:hover {
+  background: var(--navy);
+  color: #fff;
+}
+
+.booking-buttons span {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+}
+
+.booking-buttons strong {
+  font-family: var(--serif-en);
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 400;
+}
+
+.reservation-feature {
+  min-height: 760px;
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+}
+
+.reservation-feature__image {
+  min-height: 720px;
+  background-position: center;
+  background-size: cover;
+}
+
+.reservation-feature__image--lettering {
+  background-image: url("../images/lettering.webp");
+}
+
+.reservation-feature__copy {
+  padding: 9vw 7vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--paper);
+}
+
+.reservation-feature__copy h2 {
+  margin: 0 0 36px;
+  font-size: clamp(54px, 6vw, 88px);
+  line-height: .94;
+}
+
+.reservation-feature__copy p {
+  max-width: 430px;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.reservation-notice {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10vw;
+}
+
+.reservation-notice h2 {
+  margin: 0;
+  font-size: clamp(64px, 8vw, 112px);
+  line-height: .88;
+}
+
+.contact-strip {
+  padding: 34px var(--page-x);
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  background: var(--terra);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+}
+
+.contact-strip p,
+.contact-strip a {
+  margin: 0;
+  font-size: 11px;
+}
+
+@media (max-width: 850px) {
+  .booking-section {
+    display: block;
+  }
+
+  .booking-section__content h2 {
+    font-size: clamp(58px, 18vw, 82px);
+  }
+
+  .booking-buttons {
+    margin-top: 52px;
+    grid-template-columns: 1fr;
+  }
+
+  .reservation-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .reservation-feature__image {
+    min-height: 120vw;
+  }
+
+  .reservation-feature__copy {
+    padding: 82px 24px;
+  }
+
+  .reservation-notice {
+    grid-template-columns: 1fr;
+    gap: 58px;
+  }
+
+  .contact-strip {
+    padding: 28px 24px;
+    flex-direction: column;
+  }
+}

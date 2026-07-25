@@ -1,0 +1,583 @@
+/* =========================================
+   UPTOME — HOME
+========================================= */
+
+/* HERO */
+
+.hero {
+  position: relative;
+  min-height: 100svh;
+  overflow: hidden;
+  color: #fff;
+  contain: paint;
+}
+
+.hero__media {
+  position: absolute;
+  inset: 0;
+  background-color: #48504a;
+  background-position: center;
+  background-size: cover;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.hero__media--home {
+  background-image: url("../images/uptome-hero-pc.webp");
+  transform: scale(1.08);
+  animation: hero-slow-zoom 9s cubic-bezier(.22, 1, .36, 1) forwards;
+  will-change: transform;
+}
+
+.hero__shade {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(8, 16, 23, .06) 0%,
+      rgba(8, 16, 23, .10) 46%,
+      rgba(8, 16, 23, .42) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(8, 16, 23, .20) 0%,
+      rgba(8, 16, 23, .03) 50%,
+      rgba(8, 16, 23, .10) 100%
+    );
+}
+
+.hero__copy {
+  position: absolute;
+  z-index: 2;
+  left: 8.5vw;
+  bottom: 12vh;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(50px, 8vw, 90px);
+  line-height: .82;
+}
+
+.hero__title {
+  overflow: visible;
+}
+
+.hero__title span {
+  display: block;
+  opacity: 0;
+  transform: translateY(115%);
+  animation: hero-title-up .92s cubic-bezier(.22, 1, .36, 1) forwards;
+  will-change: opacity, transform;
+}
+
+.hero__title span:nth-child(1) {
+  animation-delay: .42s;
+}
+
+.hero__title span:nth-child(2) {
+  animation-delay: .56s;
+}
+
+.hero__title span:nth-child(3) {
+  animation-delay: .70s;
+}
+
+.hero__ko {
+  margin: 36px 0 0 4px;
+  font-family: var(--serif-ko);
+  font-size: 16px;
+  line-height: 1.85;
+  letter-spacing: -.02em;
+}
+
+.hero__scroll {
+  position: absolute;
+  left: var(--page-x);
+  bottom: 4vh;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  writing-mode: vertical-rl;
+}
+
+@keyframes hero-slow-zoom {
+  from {
+    transform: scale(1.08);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes hero-title-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* INTRO */
+
+.intro {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-right: var(--page-x);
+  padding-left: var(--page-x);
+}
+
+.intro__content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(320px, .75fr);
+  grid-template-areas:
+    "text illustration"
+    "button illustration";
+  align-items: center;
+  column-gap: clamp(70px, 9vw, 160px);
+}
+
+.intro__text {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.intro__content h2 {
+  max-width: 950px;
+  margin: 0;
+  font-size: clamp(66px, 7vw, 116px);
+  line-height: .92;
+  letter-spacing: -.06em;
+}
+
+.intro__bottom {
+  grid-area: button;
+  margin-top: 72px;
+}
+
+.intro__illustration {
+  grid-area: illustration;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro__illustration img {
+  width: min(100%, 350px);
+  height: auto;
+  opacity: .88;
+  filter: saturate(.78);
+}
+
+.intro .editorial-link {
+  min-width: 0;
+}
+
+/* MENU FEATURE */
+
+.menu-feature {
+  min-height: 740px;
+  display: grid;
+  grid-template-columns: 1.08fr .84fr 1.08fr;
+}
+
+.menu-feature__image {
+  position: relative;
+  min-height: 740px;
+  margin: 0;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.menu-feature__image--one {
+  background-image: url("../images/uptome-dish6.webp");
+}
+
+.menu-feature__image--two {
+  background-image: url("../images/uptome-dish5.webp");
+}
+
+.menu-feature__image figcaption {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 22px;
+  color: var(--ivory);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+}
+
+.menu-feature__copy {
+  padding: 90px 52px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--navy);
+  color: #fff;
+}
+
+.menu-feature__copy h2 {
+  margin: 0;
+  font-size: clamp(52px, 5.2vw, 82px);
+  line-height: .94;
+}
+
+.menu-feature__copy p {
+  max-width: 310px;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.menu-feature__copy .editorial-link {
+  width: 100%;
+  max-width: none;
+  padding-bottom: 11px;
+  justify-content: space-between;
+}
+
+/* MANIFESTO */
+
+.manifesto {
+  position: relative;
+  min-height: 740px;
+  overflow: hidden;
+  background: var(--paper);
+}
+
+.manifesto__small {
+  margin: 35px 0 36px;
+  text-align: center;
+}
+
+.manifesto h2 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: var(--red);
+  font-size: clamp(50px, 10vw, 120px);
+  line-height: .87;
+  text-align: center;
+}
+
+.manifesto__mark {
+  position: absolute;
+  right: 4vw;
+  bottom: -95px;
+  color: rgba(125, 135, 111, .15);
+  font-size: 50px;
+  transform: rotate(18deg);
+}
+
+/* HOME FEATURE */
+
+.home-feature {
+  display: grid;
+  grid-template-columns: 1.25fr .75fr;
+  align-items: center;
+  gap: 8vw;
+}
+
+.home-feature__media {
+  min-height: 680px;
+  background-position: center;
+  background-size: cover;
+}
+
+.home-feature__media--terrace {
+  background-image: url("../images/terrace.webp");
+}
+
+.home-feature__copy {
+  max-width: 480px;
+}
+
+.home-feature__copy h2 {
+  margin: 0 0 34px;
+  font-size: clamp(54px, 6vw, 92px);
+  line-height: .95;
+}
+
+.home-feature__copy p {
+  font-size: 14px;
+  line-height: 2;
+}
+
+/* VISIT / MEET US */
+
+.visit {
+  position: relative;
+  min-height: 780px;
+  overflow: hidden;
+  padding: 80px 24px;
+  display: grid;
+  place-items: center;
+}
+
+.visit__photo {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background-image: url("../images/uptome-hall1.webp");
+  background-position: center;
+  background-size: cover;
+  filter: saturate(.82) brightness(.77);
+}
+
+.visit__card {
+  position: relative;
+  z-index: 1;
+  width: min(700px, 100%);
+  margin: 0;
+  padding: 66px;
+  background: rgba(20, 36, 64, .96);
+  color: #fff;
+}
+
+.visit__card h2 {
+  margin: 0 0 56px;
+  font-size: clamp(50px, 5.7vw, 60px);
+  line-height: .9;
+}
+
+.visit__details {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  border-top: 1px solid rgba(255, 255, 255, .35);
+}
+
+.visit__details p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.visit .solid-button {
+  width: 100%;
+  margin-top: 32px;
+  padding: 19px 22px;
+  background: var(--ivory);
+  color: var(--navy);
+}
+
+.visit .cta-button {
+  margin-top: 28px;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 850px) {
+  .hero {
+    height: calc(var(--vh, 1vh) * 100);
+    min-height: calc(var(--vh, 1vh) * 100);
+  }
+
+  .hero__media--home {
+    background-image: url("../images/uptome-hero-mobile.webp");
+    background-position: 58% center;
+    transform: translateZ(0) scale(1.08);
+    transform-origin: center;
+    animation: hero-slow-zoom 7s cubic-bezier(.22, 1, .36, 1) forwards;
+    will-change: transform;
+  }
+
+  .hero__copy {
+    right: 24px;
+    left: 24px;
+    bottom: 10vh;
+  }
+
+  .hero h1 {
+    font-size: clamp(40px, 13vw, 70px);
+    line-height: .84;
+  }
+
+  .hero__ko {
+    margin-top: 28px;
+    font-size: 14px;
+  }
+
+  .hero__scroll {
+    right: 20px;
+    bottom: 26px;
+    left: auto;
+    writing-mode: initial;
+  }
+
+  .intro {
+    padding: 78px 24px 58px;
+  }
+
+  .intro__content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .intro__text {
+    order: 1;
+  }
+
+  .intro__content h2 {
+    font-size: clamp(48px, 13.5vw, 68px);
+    line-height: .96;
+    letter-spacing: -.06em;
+  }
+
+  .intro__illustration {
+    order: 2;
+    margin-top: 18px;
+    margin-bottom: 16px;
+    justify-content: flex-end;
+  }
+
+  .intro__illustration img {
+    width: min(57%, 250px);
+  }
+
+  .intro__bottom {
+    order: 3;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .intro .editorial-link {
+    width: max-content;
+  }
+
+  .menu-feature {
+    min-height: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .menu-feature__image {
+    min-height: 130vw;
+  }
+
+  .menu-feature__copy {
+    min-height: 450px;
+    padding: 62px 24px 70px;
+    line-height: .88;
+  }
+
+  .menu-feature__copy h2 {
+    max-width: 5.2ch;
+    font-size: clamp(52px, 16vw, 68px);
+    line-height: .93;
+  }
+
+  .menu-feature__copy .editorial-link {
+    width: 100%;
+  }
+
+  /* Mobile Safari scroll-stall fix:
+     remove transform/GPU promotion from the large food images. */
+  .menu-feature__image.reveal-image {
+    opacity: 0;
+    transform: none;
+    transition: opacity .7s ease;
+    will-change: auto;
+  }
+
+  .menu-feature__image.reveal-image.is-visible {
+    opacity: 1;
+    transform: none;
+    will-change: auto;
+  }
+
+  .manifesto {
+    min-height: 440px;
+    padding: 86px 24px 92px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .manifesto__small {
+    margin: 0 0 26px;
+    text-align: left;
+  }
+
+  .manifesto h2 {
+    max-width: 100%;
+    margin-top: 0;
+    margin-left: auto;
+    font-size: clamp(48px, 14.7vw, 66px);
+    line-height: .96;
+    letter-spacing: -.06em;
+    text-align: right;
+    transform: translateY(-4px);
+  }
+
+  .manifesto__mark {
+    right: -50px;
+    font-size: 70px;
+  }
+
+  .home-feature {
+    grid-template-columns: 1fr;
+    gap: 54px;
+  }
+
+  .home-feature__media {
+    min-height: 115vw;
+  }
+
+  .home-feature__copy h2 {
+    font-size: clamp(52px, 16vw, 70px);
+  }
+
+  .visit {
+    min-height: 640px;
+    padding: 58px 22px;
+  }
+
+  .visit__card {
+    width: 100%;
+    padding: 40px 28px 30px;
+  }
+
+  .visit__card h2 {
+    margin-bottom: 32px;
+    font-size: clamp(46px, 14vw, 60px);
+    line-height: .92;
+  }
+
+  .visit__details {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .visit__details p {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .visit .cta-button {
+    min-height: 62px;
+    margin-top: 26px;
+    padding: 0 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__media--home,
+  .hero__title span {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
