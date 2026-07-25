@@ -5,7 +5,7 @@
 
 .menu-page {
   --menu-gutter: clamp(24px, 5vw, 82px);
-  --menu-section: clamp(120px, 11vw, 180px);
+  --menu-section: clamp(104px, 9vw, 150px);
   --menu-muted: rgba(20, 36, 64, 0.64);
 
   overflow: hidden;
@@ -43,7 +43,7 @@
 ========================================= */
 
 .menu-intro {
-  padding: clamp(46px, 5vw, 76px) 0 var(--menu-section);
+  padding: clamp(24px, 2.8vw, 42px) 0 clamp(78px, 8vw, 118px);
 }
 
 .menu-intro__top {
@@ -64,8 +64,8 @@
 .menu-intro__bottom {
   display: flex;
   justify-content: flex-end;
-  margin-top: clamp(70px, 8vw, 124px);
-  padding-top: clamp(38px, 4vw, 60px);
+  margin-top: clamp(44px, 5vw, 72px);
+  padding-top: 0;
 }
 
 .menu-intro__lead {
@@ -82,7 +82,7 @@
   margin: 0;
   color: var(--menu-muted);
   font-size: 14px;
-  line-height: 1.9;
+  line-height: 2;
   letter-spacing: -0.02em;
 }
 
@@ -92,7 +92,7 @@
 ========================================= */
 
 .menu-downloads {
-  padding-block: var(--menu-section);
+  padding: clamp(64px, 7vw, 104px) 0 clamp(104px, 9vw, 144px);
   background: var(--ivory);
 }
 
@@ -113,7 +113,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(24px, 3vw, 48px);
-  margin-top: clamp(82px, 8vw, 126px);
+  margin-top: clamp(56px, 6vw, 90px);
 }
 
 .menu-file-card {
@@ -181,14 +181,14 @@
 }
 
 .menu-file-card__top span {
-  font-size: 9px;
+  font-size: 10px;
   line-height: 1;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
 }
 
 .menu-file-card__top span:last-child {
-  padding: 8px 11px;
+  padding: 9px 14px;
   border: 1px solid rgba(255, 255, 255, 0.52);
   border-radius: 999px;
 }
@@ -222,8 +222,8 @@
   align-items: center;
   gap: 12px;
   padding-bottom: 7px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.72);
-  font-size: 9px;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.8);
+  font-size: 10px;
   line-height: 1;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -240,7 +240,7 @@
 
 .menu-downloads__help {
   max-width: 560px;
-  margin: clamp(42px, 5vw, 72px) 0 0 auto;
+  margin: clamp(52px, 5.5vw, 78px) 0 0 auto;
   color: var(--menu-muted);
   font-size: 12px;
   line-height: 1.8;
@@ -254,7 +254,7 @@
 ========================================= */
 
 .menu-notice {
-  padding-block: var(--menu-section);
+  padding: clamp(118px, 10vw, 160px) 0 clamp(112px, 9vw, 148px);
   background: var(--paper);
 }
 
@@ -390,7 +390,7 @@
 @media (max-width: 1100px) {
   .menu-page {
     --menu-gutter: 38px;
-    --menu-section: 124px;
+    --menu-section: 112px;
   }
 
   .menu-file-card {
@@ -416,7 +416,7 @@
 @media (max-width: 850px) {
   .menu-page {
     --menu-gutter: 22px;
-    --menu-section: 96px;
+    --menu-section: 82px;
   }
 
   .menu-body .site-header,
@@ -427,7 +427,7 @@
 
   /* Intro */
   .menu-intro {
-    padding: 22px 0 var(--menu-section);
+    padding: 8px 0 70px;
   }
 
   .menu-intro h1 {
@@ -440,8 +440,8 @@
 
   .menu-intro__bottom {
     display: block;
-    margin-top: 58px;
-    padding-top: 34px;
+    margin-top: 36px;
+    padding-top: 0;
   }
 
   .menu-intro__lead {
@@ -462,7 +462,7 @@
   .menu-download-grid {
     grid-template-columns: 1fr;
     gap: 24px;
-    margin-top: 62px;
+    margin-top: 0;
   }
 
   .menu-file-card {
@@ -481,16 +481,24 @@
     font-size: clamp(50px, 15vw, 68px);
   }
 
+  .menu-downloads {
+    padding: 54px 0 88px;
+  }
+
   .menu-downloads__help {
-    margin-top: 34px;
+    margin-top: 42px;
     font-size: 11px;
     text-align: left;
   }
 
   /* Notice */
+  .menu-notice {
+    padding: 92px 0;
+  }
+
   .menu-notice__inner {
     grid-template-columns: 1fr;
-    gap: 58px;
+    gap: 52px;
   }
 
   .menu-notice__heading {
@@ -510,7 +518,7 @@
 
   .menu-notice__list p {
     font-size: 13px;
-    line-height: 1.85;
+    line-height: 1.9;
   }
 
   /* Reservation */
@@ -542,7 +550,7 @@
 @media (max-width: 390px) {
   .menu-page {
     --menu-gutter: 20px;
-    --menu-section: 88px;
+    --menu-section: 82px;
   }
 
   .menu-intro h1,
