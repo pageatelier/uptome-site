@@ -81,8 +81,7 @@
   word-break: keep-all;
   text-align : center;
 }
-.visit-info-card--reservation .visit-info-card__label,
-{ color: var(--terra); text-align: center;}
+.visit-info-card--reservation .visit-info-card__label { color: var(--terra); text-align: center;}
 
 /* 05. SEATING */
 .visit-seating { padding: 90px 10px 90px; background: var(--sage); color: var(--ivory); }
@@ -192,7 +191,7 @@
   .visit-parking__content h3 {font-size:25px; }
   .visit-parking__inner { grid-template-columns: 1fr; gap: 42px; }
   .visit-parking__heading { position: static;} 
-  .visit-parkint__heading h2 { font-size:30px}
+  .visit-parking__heading h2 { font-size:30px}
    .visit-parking {
     padding: 48px 0;
   }

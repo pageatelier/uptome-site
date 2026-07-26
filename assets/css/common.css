@@ -1,5 +1,5 @@
 /* =========================================
-   UPTOME �� COMMON
+   UPTOME — COMMON
 ========================================= */
 
 :root {
@@ -704,7 +704,7 @@ body.menu-open .site-header {
     transition: transform 0.3s cubic-bezier(.22, 1, .36, 1);
   }
 
-  /* 紐⑤컮�� �곗튂 �④낵 */
+  /* Mobile touch feedback */
   .mobile-menu__instagram:active {
     opacity: 0.55;
   }
@@ -887,7 +887,7 @@ body.menu-open {
 }
 
 /* =========================================
-   MOBILE MENU �� STABLE HEADER / SCROLL LOCK
+   MOBILE MENU — STABLE HEADER / SCROLL LOCK
 ========================================= */
 
 @media (max-width: 850px) {

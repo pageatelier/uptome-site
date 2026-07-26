@@ -1,0 +1,253 @@
+/* =========================================
+   UPTOME — FINAL DELIVERY POLISH
+   Global spacing, typography and color rhythm
+========================================= */
+
+:root {
+  --navy: #142440;
+  --navy-deep: #0f1e36;
+  --ivory: #f4f0e7;
+  --paper: #fbf9f4;
+  --charcoal: #1f2320;
+  --sage: #7d876f;
+  --terra: #b96750;
+  --red: #c92f20;
+  --line: rgba(20, 36, 64, .16);
+  --text-muted: rgba(20, 36, 64, .68);
+  --page-max: 1600px;
+  --page-x: clamp(24px, 5vw, 80px);
+  --section-y: clamp(96px, 8.5vw, 144px);
+  --display-xl: clamp(66px, 7.2vw, 112px);
+  --display-lg: clamp(54px, 5.8vw, 92px);
+  --display-md: clamp(42px, 4.3vw, 68px);
+  --body-size: clamp(14px, .95vw, 16px);
+  --body-leading: 1.88;
+}
+
+html { font-size: 16px; }
+body {
+  background: var(--ivory);
+  color: var(--charcoal);
+  font-family: var(--sans);
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3 { text-wrap: balance; }
+p { color: inherit; }
+
+.section,
+.about-shell,
+.menu-shell,
+.visit-shell,
+.reservation-shell {
+  width: min(100%, var(--page-max));
+  margin-inline: auto;
+}
+
+.about-shell,
+.menu-shell,
+.visit-shell,
+.reservation-shell {
+  padding-inline: var(--page-x);
+}
+
+.site-header {
+  height: 80px;
+  padding-inline: var(--page-x);
+}
+
+.site-header--dark {
+  color: var(--navy);
+}
+
+.wordmark { font-size: clamp(26px, 2vw, 31px); }
+.site-nav a,
+.menu-toggle {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .15em;
+}
+
+.body-copy p,
+.about-intro__body,
+.chef-section__text p,
+.farm-section__body p,
+.visit-info-card p,
+.visit-seating-card p,
+.visit-parking__content p,
+.menu-notice__list p,
+.reservation-notice .notice-list p,
+.reservation-pet p,
+.reservation-lettering p {
+  font-size: var(--body-size);
+  line-height: var(--body-leading);
+  letter-spacing: -.018em;
+}
+
+/* HOME */
+.intro { padding-block: var(--section-y); }
+.intro__content h2 { font-size: var(--display-xl); line-height: .93; }
+.intro__bottom { margin-top: clamp(48px, 5vw, 72px); }
+.menu-feature { min-height: clamp(660px, 54vw, 800px); }
+.menu-feature__image { min-height: inherit; }
+.menu-feature__copy { padding: clamp(70px, 6vw, 96px) clamp(38px, 4vw, 60px) clamp(48px, 4vw, 68px); }
+.menu-feature__copy h2 { font-size: var(--display-lg); }
+.manifesto { min-height: clamp(560px, 48vw, 720px); padding-block: var(--section-y); }
+.manifesto h2 { font-size: clamp(64px, 8.4vw, 118px); }
+.visit__card { padding: clamp(42px, 5vw, 66px); }
+
+/* ABOUT */
+.about-intro { padding: clamp(34px, 4vw, 58px) 0 var(--section-y); }
+.about-intro h1 { max-width: 1100px; margin-inline: auto; font-size: var(--display-xl); line-height: .98; color: var(--navy); }
+.about-intro__body { max-width: 760px; margin: clamp(46px, 5vw, 72px) auto 0; color: var(--text-muted); }
+.chef-section { grid-template-columns: minmax(0, 1.08fr) minmax(390px, .92fr); min-height: clamp(700px, 55vw, 860px); }
+.chef-section__content { padding: clamp(64px, 6vw, 100px) clamp(42px, 5vw, 82px); }
+.chef-section__content h2 { font-size: var(--display-lg); line-height: .94; }
+.chef-section__text p { text-align: left; }
+.farm-section { padding-block: var(--section-y); }
+.farm-section__grid { grid-template-columns: minmax(360px, .9fr) minmax(0, 1.1fr); gap: clamp(52px, 7vw, 110px); }
+.farm-section__heading h2 { font-size: var(--display-lg); }
+.farm-section__body { margin-top: clamp(44px, 5vw, 80px); }
+.press-section { padding-block: var(--section-y); }
+.press-section__heading h2 { font-size: clamp(60px, 7vw, 104px); }
+.press-grid { margin-top: clamp(52px, 5vw, 76px); }
+.press-card__info h3 { font-size: clamp(27px, 2.4vw, 38px); }
+
+/* MENU */
+.menu-intro { padding: clamp(26px, 3vw, 46px) 0 clamp(22px, 3vw, 42px); }
+.menu-intro h1 { margin: 0; font-size: clamp(42px, 4.6vw, 66px); line-height: 1.02; color: var(--navy); }
+.menu-downloads { width: 100%; max-width: none; padding: 0 0 clamp(72px, 7vw, 110px); }
+.menu-download-grid { margin-top: 0; }
+.menu-file-card { min-height: clamp(520px, 43vw, 690px); }
+.menu-downloads__help { margin-top: 28px; }
+.menu-notice { padding-block: var(--section-y); }
+.menu-notice__heading { margin-left: 0; }
+.menu-notice__list article { padding: 18px 0; border-bottom: 1px solid var(--line); }
+.menu-reservation__content { width: min(100%, var(--page-max)); margin-inline: auto; }
+
+/* VISIT */
+.visit-essential { padding: clamp(34px, 4vw, 58px) 0 clamp(82px, 7vw, 112px); }
+.visit-essential__heading h2 { font-size: clamp(48px, 5.4vw, 76px); color: var(--navy); }
+.visit-info-grid { margin-top: clamp(42px, 5vw, 70px); row-gap: 20px; }
+.visit-info-card { min-height: 230px; border-top: 1px solid var(--line); }
+.visit-info-card__label { font-size: 11px; font-weight: 500; }
+.visit-info-card h3 { font-size: clamp(22px, 2vw, 30px); color: var(--navy); }
+.visit-info-card__accent { color: var(--terra) !important; }
+.visit-seating { padding-block: var(--section-y); }
+.visit-seating-card__content { padding: clamp(34px, 4vw, 54px); }
+.visit-seating-card h3 { font-size: clamp(36px, 3.5vw, 52px); }
+.visit-parking { padding-block: var(--section-y); }
+.visit-parking__heading h2,
+.visit-map h2 { font-size: clamp(48px, 5vw, 76px); color: var(--navy); }
+.visit-map { padding-block: var(--section-y); }
+.visit-map__frame { width: min(calc(100% - (var(--page-x) * 2)), 1440px); }
+
+/* RESERVATION */
+.reservation-page .section { padding: var(--section-y) var(--page-x); }
+.booking-section { padding-top: clamp(38px, 4vw, 64px) !important; }
+.booking-section__content h2 { margin: 0; font-size: clamp(52px, 5.4vw, 82px); color: var(--navy); }
+.booking-buttons a { min-height: clamp(170px, 15vw, 220px); }
+.reservation-notice { padding-top: clamp(74px, 7vw, 108px) !important; }
+.reservation-pet { padding-top: var(--section-y); }
+.reservation-lettering { padding-bottom: var(--section-y); }
+
+/* FOOTER */
+.site-footer { padding-top: clamp(54px, 6vw, 86px); }
+.site-footer__logo { font-size: clamp(34px, 3.4vw, 50px); }
+.site-footer__info p { font-size: 13px; line-height: 1.8; }
+.site-footer__links a { font-size: 13px; }
+
+@media (max-width: 850px) {
+  :root {
+    --page-x: 22px;
+    --section-y: 76px;
+    --body-size: 14px;
+    --body-leading: 1.78;
+  }
+
+  .site-header,
+  .about-body .site-header,
+  .menu-body .site-header,
+  .visit-body .site-header {
+    height: 68px;
+    min-height: 68px;
+    padding-inline: var(--page-x);
+  }
+
+  .wordmark { font-size: 25px; }
+  .mobile-menu { padding: 92px var(--page-x) 18px; }
+  .mobile-menu__nav { gap: 17px; }
+  .mobile-menu__nav a { font-size: clamp(32px, 10.5vw, 46px); }
+
+  .section,
+  .about-shell,
+  .menu-shell,
+  .visit-shell,
+  .reservation-shell { padding-inline: var(--page-x); }
+
+  .intro { padding-block: 74px 62px; }
+  .intro__content h2 { font-size: clamp(46px, 13vw, 64px); }
+  .menu-feature__copy { min-height: 420px; padding: 58px var(--page-x) 64px; }
+  .menu-feature__copy h2 { font-size: clamp(48px, 15vw, 66px); }
+  .manifesto { min-height: 410px; padding-block: 72px; }
+  .manifesto h2 { font-size: clamp(45px, 13.5vw, 62px); }
+  .visit { min-height: 610px; }
+  .visit__card { padding: 38px 24px 30px; }
+
+  .about-intro { padding: 24px 0 72px; }
+  .about-intro h1 { font-size: clamp(46px, 13.5vw, 62px); text-align: left; }
+  .about-intro__body { margin-top: 36px; text-align: left; }
+  .chef-section__content { padding: 68px var(--page-x) 72px; }
+  .chef-section__content h2,
+  .farm-section__heading h2 { font-size: clamp(46px, 13.5vw, 62px); }
+  .farm-section { padding-block: 68px; }
+  .farm-section__grid { grid-template-columns: 1fr; gap: 32px; }
+  .farm-section__heading h2,
+  .farm-section__body p { text-align: left; }
+  .farm-section__body { margin-top: 28px; }
+  .press-section { padding-block: 72px; }
+  .press-section__heading h2 { font-size: clamp(48px, 14vw, 66px); text-align: left; }
+  .press-grid { margin-top: 42px; }
+
+  .menu-intro { padding: 18px 0 24px; }
+  .menu-intro h1 { font-size: 30px; }
+  .menu-downloads { width: 100%; padding-bottom: 66px; }
+  .menu-download-grid { gap: 18px; }
+  .menu-file-card { aspect-ratio: 4 / 5; }
+  .menu-notice { padding-block: 72px; }
+  .menu-notice__inner { gap: 46px; }
+  .menu-notice__heading h2 { font-size: clamp(42px, 13vw, 56px); text-align: left; }
+  .menu-notice__list article { max-width: 100%; }
+
+  .visit-essential { padding: 22px 0 64px; }
+  .visit-essential__heading h2 { font-size: clamp(42px, 12vw, 56px); }
+  .visit-info-grid { margin-top: 30px; }
+  .visit-info-card { padding: 22px 0 24px; text-align: left; }
+  .visit-info-card__top,
+  .visit-info-card__label,
+  .visit-info-card h3,
+  .visit-info-card p { text-align: left; }
+  .visit-seating { padding-block: 64px; }
+  .visit-seating-card h3 { font-size: 34px; }
+  .visit-parking { padding-block: 64px; }
+  .visit-parking__heading h2,
+  .visit-map h2 { font-size: 46px; }
+  .visit-map { padding-block: 68px; }
+  .visit-map__frame { width: calc(100% - 44px); height: 78vw; min-height: 300px; }
+
+  .reservation-page .section { padding: 68px var(--page-x); }
+  .booking-section { padding-top: 22px !important; }
+  .booking-section__content h2 { font-size: clamp(46px, 13vw, 62px); }
+  .reservation-notice { padding-top: 56px !important; }
+  .reservation-pet { padding-top: 52px; }
+  .reservation-lettering { padding-bottom: 52px; }
+
+  .site-footer { padding: 46px var(--page-x) 28px; }
+  .site-footer__top { padding-bottom: 42px; }
+  .site-footer__logo { font-size: 34px; }
+}
+
+@media (max-width: 390px) {
+  :root { --page-x: 20px; }
+  .visit-map__frame { width: calc(100% - 40px); }
+}

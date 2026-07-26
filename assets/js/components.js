@@ -93,14 +93,13 @@ const footer = `
       </div>
       <div class="site-footer__links">
         <a href="https://www.instagram.com/up_to_me_official" target="_blank" rel="noopener noreferrer">Instagram →</a>
-        <a href="tel:050714801438">Contact →</a>
+        <a href="tel:01077461288">Contact →</a>
         <a href="reservation.html">Reservation →</a>
       </div>
     </div>
 
     <div class="site-footer__bottom">
-      <small> © 2026 Uptome. All rights reserved.<br>
-  Site by <a href="#">Page Atelier</a>.</small>
+      <small>© ${year} Uptome. All rights reserved.<br>Site by Page Atelier.</small>
      
     </div>
   </footer>
