@@ -35,7 +35,7 @@
 }
 
 /* 02. GOOD TO KNOW */
-.visit-essential { padding-block: clamp(86px, 8vw, 128px); background: var(--paper); }
+.visit-essential { padding-block: clamp(86px, 8vw, 128px); }
 .visit-essential__heading h2 {
   margin: 0;
   font-size: clamp(54px, 6.8vw, 104px);
@@ -82,44 +82,6 @@
 }
 .visit-info-card--reservation .visit-info-card__label,
 .visit-info-card--reservation h3 { color: var(--terra); }
-
-/* 03. PET */
-.visit-pet { padding-block: var(--visit-section);     background: var(--navy); }
-.visit-pet__card {
-  min-height: clamp(420px, 42vw, 620px);
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr);
-  align-items: center;
-  gap: clamp(30px, 6vw, 96px);
-  padding: clamp(42px, 6vw, 88px);
-  background: var(--paper);
-}
-.visit-pet__eyebrow { color: var(--terra); font-size: 9px; letter-spacing: .17em; text-transform: uppercase; }
-.visit-pet h2 {
-  margin: 24px 0 0;
-  font-size: clamp(54px, 7vw, 108px);
-  font-weight: 400;
-  line-height: .9;
-  letter-spacing: -.055em;
-}
-.visit-pet p {
-  max-width: 590px;
-  margin: clamp(30px, 4vw, 48px) 0 0;
-  color: var(--visit-muted);
-  font-size: 14px;
-  line-height: 1.9;
-  word-break: keep-all;
-}
-.visit-pet__illustration { display: flex; align-items: flex-end; justify-content: center; align-self: stretch; }
-.visit-pet__illustration img { width: min(100%, 360px); margin-top: auto; object-fit: contain; }
-
-/* 04. LETTERING */
-.visit-lettering { padding-bottom: var(--visit-section);     background: var(--navy); }
-.visit-lettering__card { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(360px, .92fr); background: var(--paper); }
-.visit-lettering__image { min-height: clamp(520px, 48vw, 720px); background: url("../images/lettering.webp") 62% 44% / cover no-repeat; }
-.visit-lettering__content { display: flex; flex-direction: column; justify-content: center; padding: clamp(44px, 6vw, 90px); }
-.visit-lettering h2 { margin: 0; font-size: clamp(52px, 6.5vw, 98px); font-weight: 400; line-height: .9; letter-spacing: -.055em; }
-.visit-lettering p { max-width: 520px; margin: clamp(34px, 4vw, 50px) 0 0; color: var(--visit-muted); font-size: 14px; line-height: 1.9; word-break: keep-all; }
 
 /* 05. SEATING */
 .visit-seating { padding-block: var(--visit-section); background: var(--sage); color: var(--ivory); }
@@ -211,16 +173,6 @@
   .visit-info-card { min-height: 0; padding: 22px 0 27px; border-bottom: 0 !important; }
   .visit-info-card h3 { padding-top: 26px; font-size: clamp(30px,8.6vw,42px); }
   .visit-info-card p { margin-top: 0; padding-top: 18px; font-size: 12px; }
-
-  .visit-pet__card { min-height: 0; grid-template-columns: 1fr; gap: 36px; padding: 38px 24px 0; }
-  .visit-pet h2, .visit-lettering h2 { font-size: clamp(46px,14vw,64px); line-height: .94; }
-  .visit-pet p, .visit-lettering p { font-size: 14px; line-height: 1.85; }
-  .visit-pet__illustration { min-height: 220px; justify-content: flex-end; }
-  .visit-pet__illustration img { width: min(62vw, 260px); }
-
-  .visit-lettering__card { grid-template-columns: 1fr; }
-  .visit-lettering__image { min-height: 0; aspect-ratio: 4 / 5; }
-  .visit-lettering__content { padding: 38px 24px 44px; }
 
   .visit-seating-grid { grid-template-columns: 1fr; gap: 24px; }
   .visit-seating-card__image { min-height: 0; aspect-ratio: 4 / 5; }
