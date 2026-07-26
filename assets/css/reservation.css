@@ -407,7 +407,7 @@
   .reservation-notice h2 {
     font-size: clamp(44px, 13vw, 62px);
     line-height: .92;
-    text-align: right;
+    text-align: left;
   }
 
   .reservation-notice .notice-list article {
