@@ -8,21 +8,24 @@
     content="업투미 캐치테이블 예약, 반려견 동반 테라스, 레터링 서비스와 단체 예약 안내"
   >
   <title>Reservation | UPTOME</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,ital,wght@6..96,0,400;6..96,0,500;6..96,1,400;6..96,1,500&family=Gloock&family=Noto+Serif+KR:wght@400;500&display=swap"
+    rel="stylesheet"
+  >
   <link
     rel="stylesheet"
     crossorigin
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
   >
 
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,ital,wght@6..96,0,400;6..96,0,500;6..96,1,400;6..96,1,500&family=Gloock&family=Noto+Serif+KR:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/common.css">
   <link rel="stylesheet" href="assets/css/reservation.css">
+  <link rel="stylesheet" href="assets/css/final-polish.css">
 
-    <link rel="stylesheet" href="assets/css/final-polish.css">
-<script src="assets/js/components.js" defer></script>
+  <script src="assets/js/components.js" defer></script>
   <script src="assets/js/main.js" defer></script>
 </head>
 
@@ -30,56 +33,57 @@
   <div data-site-header></div>
 
   <main class="reservation-page">
+    <!-- 01. BOOKING -->
     <section class="booking-section section">
-
       <div class="booking-section__content">
-        <h2 class="reveal">Choose your<br>booking service.</h2>
-<div class="booking-buttons reveal">
-  <a
-    class="booking-card booking-card--primary"
-    href="https://app.catchtable.co.kr/ct/shop/uptome?from"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <span class="booking-card__head">
-      <span class="booking-card__label">Korean guest</span>
-    </span>
+        <h1 class="reveal">Choose your<br>booking service.</h1>
 
-    <span class="booking-card__foot">
-      <span class="booking-card__copy">
-        <strong>캐치테이블로 예약하기</strong>
-        <small>국내 고객 예약</small>
-      </span>
+        <div class="booking-buttons reveal">
+          <a
+            class="booking-card booking-card--primary"
+            href="https://app.catchtable.co.kr/ct/shop/uptome?from"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="booking-card__head">
+              <span class="booking-card__label">Korean guest</span>
+            </span>
 
-      <span class="booking-card__arrow" aria-hidden="true">↗</span>
-    </span>
-  </a>
+            <span class="booking-card__foot">
+              <span class="booking-card__copy">
+                <strong>캐치테이블로 예약하기</strong>
+                <small>국내 고객 예약</small>
+              </span>
+              <span class="booking-card__arrow" aria-hidden="true">↗</span>
+            </span>
+          </a>
 
-  <a
-    class="booking-card booking-card--secondary"
-    href="https://www.catchtable.net/explore/shop/uptome"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <span class="booking-card__head">
-      <span class="booking-card__label">International Guest</span>
-    </span>
+          <a
+            class="booking-card booking-card--secondary"
+            href="https://www.catchtable.net/explore/shop/uptome"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="booking-card__head">
+              <span class="booking-card__label">International guest</span>
+            </span>
 
-    <span class="booking-card__foot">
-      <span class="booking-card__copy">
-        <strong>Catchtable Global</strong>
-        <small>Reserve in English</small>
-      </span>
-
-      <span class="booking-card__arrow" aria-hidden="true">↗</span>
-    </span>
-  </a>
-</div>
+            <span class="booking-card__foot">
+              <span class="booking-card__copy">
+                <strong>Catchtable Global</strong>
+                <small>Reserve in English</small>
+              </span>
+              <span class="booking-card__arrow" aria-hidden="true">↗</span>
+            </span>
+          </a>
+        </div>
+      </div>
     </section>
 
-    <section class="reservation-notice section">
+    <!-- 02. NOTICE -->
+    <section class="reservation-notice section" aria-labelledby="notice-title">
       <div>
-        <h2 class="reveal">Please<br>note.</h2>
+        <h2 id="notice-title" class="reveal">Please<br>note.</h2>
       </div>
 
       <div class="notice-list">
@@ -105,7 +109,7 @@
       </div>
     </section>
 
-    <!-- PET-FRIENDLY TERRACE -->
+    <!-- 03. PET-FRIENDLY TERRACE -->
     <section class="reservation-pet" aria-labelledby="pet-title">
       <div class="reservation-shell">
         <article class="reservation-pet__card reveal">
@@ -128,7 +132,7 @@
       </div>
     </section>
 
-    <!-- LETTERING SERVICE -->
+    <!-- 04. LETTERING SERVICE -->
     <section class="reservation-lettering" aria-labelledby="lettering-title">
       <div class="reservation-shell">
         <article class="reservation-lettering__card reveal">
@@ -146,6 +150,43 @@
             </p>
           </div>
         </article>
+      </div>
+    </section>
+
+    <!-- 05. RESERVATION CTA -->
+    <section class="menu-reservation" aria-labelledby="reservation-title">
+      <div class="menu-reservation__image" aria-hidden="true"></div>
+      <div class="menu-reservation__shade" aria-hidden="true"></div>
+
+      <div class="menu-reservation__content">
+        <p class="eyebrow eyebrow--light reveal">Reservations</p>
+
+        <h2 id="reservation-title" class="reveal">
+          Your table,<br>
+          <span class="italic">when you are ready.</span>
+        </h2>
+
+        <div class="menu-reservation__actions reveal">
+          <a
+            class="cta-button"
+            href="https://app.catchtable.co.kr/ct/shop/uptome?from"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>한국어로 예약</span>
+            <span class="button-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a
+            class="outline-button"
+            href="https://www.catchtable.net/explore/shop/uptome"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Reserve in English</span>
+            <span class="button-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
       </div>
     </section>
   </main>

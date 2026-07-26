@@ -251,3 +251,58 @@ p { color: inherit; }
   :root { --page-x: 20px; }
   .visit-map__frame { width: calc(100% - 40px); }
 }
+
+/* =========================================
+   VISIT — MOBILE GOOD TO KNOW COMPACT
+========================================= */
+
+@media (max-width: 850px) {
+  .visit-essential {
+    padding: 16px 0 52px;
+  }
+
+  .visit-info-grid {
+    margin-top: 24px;
+    row-gap: 0;
+  }
+
+  .visit-info-card {
+    width: 100%;
+    min-height: 0 !important;
+    height: auto !important;
+    aspect-ratio: auto !important;
+
+    padding: 28px 0 32px;
+    justify-content: flex-start;
+
+    border-top: 1px solid rgba(20, 36, 64, 0.15);
+  }
+
+  .visit-info-card:last-child {
+    border-bottom: 1px solid rgba(20, 36, 64, 0.15);
+  }
+
+  .visit-info-card__top {
+    margin: 0;
+  }
+
+  .visit-info-card__label {
+    font-size: 11px;
+    line-height: 1;
+    letter-spacing: 0.18em;
+  }
+
+  .visit-info-card h3 {
+    margin: 0;
+    padding-top: 22px;
+    font-size: clamp(27px, 8vw, 36px);
+    line-height: 1.28;
+  }
+
+  .visit-info-card p {
+    margin: 14px 0 0;
+    padding: 0;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+}

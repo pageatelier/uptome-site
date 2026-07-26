@@ -282,6 +282,7 @@
 
 /* =========================================
    04. RESERVATION CTA
+   Matched to reservation page CTA
 ========================================= */
 
 .menu-reservation {
@@ -290,6 +291,7 @@
   display: flex;
   align-items: flex-end;
   overflow: hidden;
+  background: var(--navy-deep);
   color: #fff;
   isolation: isolate;
 }
@@ -302,14 +304,10 @@
 
 .menu-reservation__image {
   z-index: -2;
-  background:
-    url("../images/uptome.webp")
-    center 54% / cover no-repeat;
-  transition: transform 1.1s cubic-bezier(0.2, 0.7, 0.2, 1);
-}
-
-.menu-reservation:hover .menu-reservation__image {
-  transform: scale(1.025);
+  background: url("../images/uptome.webp") center 54% / cover no-repeat;
+  transform: scale(1);
+  transition: transform 1.1s cubic-bezier(.2, .7, .2, 1);
+  will-change: transform;
 }
 
 .menu-reservation__shade {
@@ -317,45 +315,66 @@
   background:
     linear-gradient(
       180deg,
-      rgba(5, 14, 20, 0.08) 12%,
-      rgba(5, 14, 20, 0.22) 48%,
-      rgba(5, 14, 20, 0.86) 100%
+      rgba(5, 14, 20, .08) 12%,
+      rgba(5, 14, 20, .24) 48%,
+      rgba(5, 14, 20, .88) 100%
     );
 }
 
 .menu-reservation__content {
-  width: 100%;
-  padding: clamp(90px, 10vw, 150px) var(--menu-gutter)
+  width: min(100%, 1600px);
+  margin-inline: auto;
+  padding:
+    clamp(90px, 10vw, 150px)
+    var(--menu-gutter)
     clamp(68px, 7vw, 104px);
 }
 
 .menu-reservation__content h2 {
   max-width: 1120px;
   margin: clamp(34px, 4vw, 58px) 0 0;
+  color: #fff;
   font-size: clamp(60px, 8vw, 128px);
   font-weight: 400;
-  line-height: 0.9;
-  letter-spacing: -0.055em;
+  line-height: .9;
+  letter-spacing: -.055em;
 }
 
 .menu-reservation__actions {
-  display: grid;
-  grid-template-columns: minmax(240px, 340px) minmax(240px, 340px);
-  gap: 14px;
   margin-top: clamp(50px, 6vw, 84px);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 340px));
+  gap: 14px;
 }
 
 .menu-reservation .cta-button,
 .menu-reservation .outline-button {
   width: 100%;
   min-width: 0;
+  min-height: 62px;
 }
 
 .menu-reservation .outline-button {
-  min-height: 50px;
   padding: 0 20px;
+  color: #fff;
+  border-color: rgba(255, 255, 255, .55);
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .menu-reservation:hover .menu-reservation__image {
+    transform: scale(1.025);
+  }
+
+  .menu-reservation .outline-button:hover {
+    background: var(--ivory);
+    border-color: var(--ivory);
+    color: var(--navy);
+  }
+
+  .menu-reservation .outline-button:hover .button-arrow {
+    transform: translateX(5px);
+  }
+}
 
 /* =========================================
    TABLET
@@ -492,19 +511,27 @@
     min-height: 78svh;
   }
 
+  .menu-reservation__image {
+    background-position: 58% center;
+  }
+
   .menu-reservation__content {
-    padding: var(--menu-section) var(--menu-gutter) 54px;
+    padding:
+      var(--menu-section)
+      var(--menu-gutter)
+      calc(54px + env(safe-area-inset-bottom));
   }
 
   .menu-reservation__content h2 {
+    margin-top: 28px;
     font-size: clamp(50px, 15vw, 70px);
-    line-height: 0.94;
+    line-height: .94;
   }
 
   .menu-reservation__actions {
-    grid-template-columns: 1fr;
-    gap: 10px;
     margin-top: 46px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
   }
 }
 

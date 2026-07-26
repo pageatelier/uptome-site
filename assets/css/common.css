@@ -1,5 +1,5 @@
 /* =========================================
-   UPTOME �� COMMON
+   UPTOME — COMMON
 ========================================= */
 
 :root {
@@ -568,8 +568,11 @@ body.menu-open .site-header {
     display: none;
   }
 
-  /* Fixed two-line icon. White + difference automatically inverts
-     over ivory, navy and photographic backgrounds. */
+  /* Fixed two-line icon. Color is switched explicitly by main.js
+     (updateMenuToggleTone), which samples the background underneath
+     the button: navy over ivory/light backgrounds, white over dark
+     ones. mix-blend-mode is not used here since it is unreliable
+     inside fixed/stacked headers on some browsers. */
   .menu-toggle {
     position: fixed;
     top: max(19px, env(safe-area-inset-top));
@@ -585,16 +588,20 @@ body.menu-open .site-header {
     border: 0;
     border-radius: 0;
     background: transparent;
-    color: #fff;
+    color: var(--navy);
     box-shadow: none;
 
     cursor: pointer;
-    mix-blend-mode: difference;
     -webkit-tap-highlight-color: transparent;
 
     transition:
+      color .25s ease,
       opacity .25s ease,
       transform .25s ease;
+  }
+
+  .menu-toggle.is-on-dark {
+    color: #fff;
   }
 
   .menu-toggle:active {
@@ -805,11 +812,10 @@ body.menu-open .site-header {
     color: #fff;
   }
 
-  /* The open menu is already navy, so disable blending and keep X white. */
+  /* The open menu is already navy, so keep the X white. */
   html.menu-open .menu-toggle,
   body.menu-open .menu-toggle {
     color: #fff;
-    mix-blend-mode: normal;
   }
 
   .section {
@@ -959,3 +965,4 @@ body.menu-open .site-header {
     overflow-x: clip;
   }
 }
+
