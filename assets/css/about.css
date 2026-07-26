@@ -555,10 +555,12 @@
 
   .chef-section {
     grid-template-columns: minmax(0, 52%) minmax(390px, 48%);
+    
   }
 
   .chef-section__content {
     padding-inline: 46px;
+
   }
 
   .chef-section__content h2 {
@@ -620,11 +622,13 @@
   }
 
   .about-intro__body {
-    margin-top:30px;
-    width: 100%;
+    margin-top:40px;
     text-align: left;
     font-size: 14px;
     line-height: 1.85;
+    max-width: 680px;
+    margin-inline: auto;
+    
   }
 
   .chef-section__text p,
