@@ -9,7 +9,8 @@ function setMenuState(isOpen) {
   if (!toggle || !mobileMenu) return;
 
   toggle.setAttribute("aria-expanded", String(isOpen));
-  toggle.textContent = isOpen ? "Close" : "Menu";
+  toggle.setAttribute("aria-label", isOpen ? "메뉴 닫기" : "메뉴 열기");
+  toggle.classList.toggle("is-open", isOpen);
 
   mobileMenu.classList.toggle("is-open", isOpen);
   mobileMenu.setAttribute("aria-hidden", String(!isOpen));
