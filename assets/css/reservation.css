@@ -7,7 +7,7 @@
   --reservation-section: clamp(104px, 9vw, 150px);
   --reservation-muted: rgba(20, 36, 64, 0.64);
   overflow: hidden;
-  color: var(--navy);
+  color: black;
 }
 
 .reservation-page *,

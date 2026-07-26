@@ -33,7 +33,7 @@
 }
 
 .about-shell {
-  width: min(100%, var(--about-max));
+  width: min(90%, var(--about-max));
   margin-inline: auto;
   padding-inline: var(--about-gutter);
 }
@@ -216,6 +216,7 @@
   padding-block: clamp(100px, 9vw, 150px);
   background: var(--about-sage-safe);
   color: var(--about-ivory-safe);
+  
 }
 
 .farm-section__grid {
@@ -223,6 +224,7 @@
   grid-template-columns: minmax(380px, 1fr) minmax(0, 0.8fr);
   align-items: center; /* stretch → center */
   gap: clamp(64px, 7vw, 100px);
+  
 }
 
 /* LEFT */

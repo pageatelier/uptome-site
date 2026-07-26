@@ -68,6 +68,8 @@
 .menu-downloads {
   padding: 0px 0 60px;
   background: var(--ivory);
+  max-width:90%;
+  margin-inline: auto;
 }
 
 .menu-downloads__heading {
@@ -85,9 +87,10 @@
 
 .menu-download-grid {
   display: grid;
+
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(24px, 3vw, 48px);
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .menu-file-card {
@@ -349,7 +352,7 @@
 }
 
 .menu-reservation .outline-button {
-  min-height: 62px;
+  min-height: 50px;
   padding: 0 20px;
 }
 
