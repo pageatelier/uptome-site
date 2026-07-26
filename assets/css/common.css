@@ -78,7 +78,7 @@ p {
 h1,
 h2,
 h3 {
-  font-family: var(--serif-en);
+  font-family: "Bodoni Moda", serif;
   font-weight: 400;
   letter-spacing: -.055em;
 }
