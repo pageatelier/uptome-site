@@ -38,7 +38,7 @@
 .visit-essential { padding: 30px 0 80px; }
 .visit-essential__heading h2 {
   margin: 0;
-  font-size: clamp(40px, 6.8vw, 60px);
+  font-size: clamp(var(--fs-40), 6.8vw, var(--fs-60));
   font-weight: 400;
   line-height: .92;
   letter-spacing: -.055em;
@@ -48,7 +48,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: clamp(28px, 4vw, 64px);
-  margin-top: clamp(52px, 6vw, 82px);
+  margin-top: clamp(var(--space-56), 6vw, var(--space-80));
 
 }
 .visit-info-card {
@@ -56,15 +56,15 @@
   min-height: 252px;
   display: flex;
   flex-direction: column;
-  padding: 24px 0 32px;
+  padding: var(--space-24) 0 var(--space-32);
 }
 .visit-info-card__top { gap: 20px;  text-align : center;}
 .visit-info-card__label{ font-size: 15px; line-height: 1; letter-spacing: .16em; text-align : center;}
 .visit-info-card__label,.visit-info-card--reservation h3  { color: black; text-align: center;}
 .visit-info-card h3 {
   margin: 0;
-  padding-top: 20px;
-  font-size: clamp(20px, 2vw, 25px);
+  padding-top: var(--space-20);
+  font-size: clamp(var(--fs-20), 2vw, var(--fs-26));
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: -.04em;
@@ -73,10 +73,10 @@
 }
 .visit-info-card h3 a { color: inherit; text-decoration: none;  }
 .visit-info-card p {
-  margin: 10px 0 0;
+  margin: var(--space-10) 0 0;
   padding-top: 0px;
   color: var(--visit-muted);
-  font-size: 14px;
+  font-size: var(--fs-14);
   line-height: 1.75;
   word-break: keep-all;
   text-align : center;
@@ -113,26 +113,26 @@
   margin: 0; font-size: 35px; font-weight: 400; line-height: 1; letter-spacing: -.04em; }
 .visit-parking__content p { 
   max-width: 620px; 
-  margin: 24px 0 0; 
+  margin: var(--space-24) 0 0;
   color: var(--visit-muted); 
-  font-size: 15px; 
+  font-size: var(--fs-15);
   line-height: 1.9; 
   word-break: keep-all; }
 
 
 /* 06. MAP */
 .visit-map {
-  padding: clamp(88px, 8vw, 132px) 0;
+  padding: clamp(var(--space-90), 8vw, var(--space-128)) 0;
   background: var(--ivory);
 }
 
 .visit-map__header {
-  padding: 0 0 clamp(44px, 4vw, 64px);
+  padding: 0 0 clamp(var(--space-48), 4vw, var(--space-64));
 }
 
 .visit-map h2 {
   margin: 0;
-  font-size: 60px;
+  font-size: var(--fs-60);
   font-weight: 400;
   line-height: .9;
   letter-spacing: -.055em;
@@ -193,7 +193,7 @@
   .visit-parking__heading { position: static;} 
   .visit-parking__heading h2 { font-size:30px}
    .visit-parking {
-    padding: 48px 0;
+    padding: var(--space-48) 0;
   }
 
   .visit-parking__inner {
@@ -206,13 +206,13 @@
   }
 
   .visit-parking__heading h2 {
-    margin-top: 8px;
-    font-size: 28px;
+    margin-top: var(--space-8);
+    font-size: var(--fs-28);
     line-height: 1;
   }
 
   .visit-parking__content article {
-    padding: 22px 0;
+    padding: var(--space-22) 0;
   }
 
   .visit-parking__content article:first-child {
@@ -220,13 +220,13 @@
   }
 
   .visit-parking__content h3 {
-    font-size: 22px;
+    font-size: var(--fs-22);
     line-height: 1.15;
   }
 
   .visit-parking__content p {
-    margin-top: 12px;
-    font-size: 13px;
+    margin-top: var(--space-12);
+    font-size: var(--fs-13);
     line-height: 1.75;
   }
 }

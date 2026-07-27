@@ -57,7 +57,7 @@
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(50px, 8vw, 90px);
+  font-size: clamp(var(--fs-52), 8vw, var(--fs-90));
   line-height: .82;
 }
 
@@ -86,9 +86,9 @@
 }
 
 .hero__ko {
-  margin: 36px 0 0 4px;
+  margin: var(--space-36) 0 0 var(--space-4);
   font-family: var(--serif-ko);
-  font-size: 16px;
+  font-size: var(--fs-16);
   line-height: 1.85;
   letter-spacing: -.02em;
 }
@@ -97,7 +97,7 @@
   position: absolute;
   left: var(--page-x);
   bottom: 4vh;
-  font-size: 10px;
+  font-size: var(--fs-10);
   text-transform: uppercase;
   letter-spacing: .16em;
   writing-mode: vertical-rl;
@@ -150,19 +150,19 @@
 .intro__content h2 {
   max-width: 950px;
   margin: 0;
-  font-size: clamp(66px, 7vw, 116px);
+  font-size: clamp(var(--fs-68), 7vw, var(--fs-116));
   line-height: .92;
   letter-spacing: -.06em;
 }
 
 .intro__bottom {
   grid-area: button;
-  margin-top: 72px;
+  margin-top: var(--space-72);
 }
 
 .intro__illustration {
   grid-area: illustration;
-  margin-top: 100px;
+  margin-top: var(--space-100);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -210,13 +210,13 @@
   bottom: 20px;
   left: 22px;
   color: var(--ivory);
-  font-size: 12px;
+  font-size: var(--fs-12);
   text-transform: uppercase;
   letter-spacing: .18em;
 }
 
 .menu-feature__copy {
-  padding: 90px 52px 56px;
+  padding: var(--space-90) var(--space-56) var(--space-56);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -226,20 +226,20 @@
 
 .menu-feature__copy h2 {
   margin: 0;
-  font-size: clamp(52px, 5.2vw, 82px);
+  font-size: clamp(var(--fs-52), 5.2vw, var(--fs-84));
   line-height: .94;
 }
 
 .menu-feature__copy p {
   max-width: 310px;
-  font-size: 14px;
+  font-size: var(--fs-14);
   line-height: 2;
 }
 
 .menu-feature__copy .editorial-link {
   width: 100%;
   max-width: none;
-  padding-bottom: 11px;
+  padding-bottom: var(--space-12);
   justify-content: space-between;
 }
 
@@ -253,7 +253,7 @@
 }
 
 .manifesto__small {
-  margin: 35px 0 36px;
+  margin: var(--space-36) 0 var(--space-36);
   text-align: center;
 }
 
@@ -262,7 +262,7 @@
   z-index: 1;
   margin: 0;
   color: var(--red);
-  font-size: clamp(50px, 10vw, 120px);
+  font-size: clamp(var(--fs-52), 10vw, var(--fs-120));
   line-height: .87;
   text-align: center;
 }
@@ -272,7 +272,7 @@
   right: 4vw;
   bottom: -95px;
   color: rgba(125, 135, 111, .15);
-  font-size: 50px;
+  font-size: var(--fs-52);
   transform: rotate(18deg);
 }
 
@@ -300,13 +300,13 @@
 }
 
 .home-feature__copy h2 {
-  margin: 0 0 34px;
-  font-size: clamp(54px, 6vw, 92px);
+  margin: 0 0 var(--space-34);
+  font-size: clamp(var(--fs-56), 6vw, var(--fs-90));
   line-height: .95;
 }
 
 .home-feature__copy p {
-  font-size: 14px;
+  font-size: var(--fs-14);
   line-height: 2;
 }
 
@@ -316,7 +316,7 @@
   position: relative;
   min-height: 780px;
   overflow: hidden;
-  padding: 80px 24px;
+  padding: var(--space-80) var(--space-24);
   display: grid;
   place-items: center;
 }
@@ -336,19 +336,19 @@
   z-index: 1;
   width: min(700px, 100%);
   margin: 0;
-  padding: 66px;
+  padding: var(--space-64);
   background: rgba(20, 36, 64, .96);
   color: #fff;
 }
 
 .visit__card h2 {
-  margin: 0 0 56px;
-  font-size: clamp(50px, 5.7vw, 60px);
+  margin: 0 0 var(--space-56);
+  font-size: clamp(var(--fs-52), 5.7vw, var(--fs-60));
   line-height: .9;
 }
 
 .visit__details {
-  padding-top: 20px;
+  padding-top: var(--space-20);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 28px;
@@ -357,20 +357,20 @@
 
 .visit__details p {
   margin: 0;
-  font-size: 12px;
+  font-size: var(--fs-12);
   line-height: 1.9;
 }
 
 .visit .solid-button {
   width: 100%;
-  margin-top: 32px;
-  padding: 19px 22px;
+  margin-top: var(--space-32);
+  padding: var(--space-20) var(--space-22);
   background: var(--ivory);
   color: var(--navy);
 }
 
 .visit .cta-button {
-  margin-top: 28px;
+  margin-top: var(--space-28);
 }
 
 /* =========================================
@@ -403,13 +403,13 @@
     left: 24px;
   }
   .hero h1 {
-    font-size: clamp(40px, 13vw, 70px);
+    font-size: clamp(var(--fs-40), 13vw, var(--fs-72));
     line-height: .84;
   }
 
   .hero__ko {
-    margin-top: 28px;
-    font-size: 14px;
+    margin-top: var(--space-28);
+    font-size: var(--fs-14);
   }
 
   .hero__scroll {
@@ -420,7 +420,7 @@
   }
 
   .intro {
-    padding: 78px 24px 58px;
+    padding: var(--space-80) var(--space-24) var(--space-56);
   }
 
   .intro__content {
@@ -435,15 +435,15 @@
   }
 
   .intro__content h2 {
-    font-size: clamp(48px, 13.5vw, 68px);
+    font-size: clamp(var(--fs-48), 13.5vw, var(--fs-68));
     line-height: .96;
     letter-spacing: -.06em;
   }
 
   .intro__illustration {
     order: 2;
-    margin-top: 18px;
-    margin-bottom: 16px;
+    margin-top: var(--space-18);
+    margin-bottom: var(--space-16);
     justify-content: flex-end;
   }
 
@@ -472,13 +472,13 @@
 
   .menu-feature__copy {
     min-height: 450px;
-    padding: 62px 24px 70px;
+    padding: var(--space-64) var(--space-24) var(--space-72);
     line-height: .88;
   }
 
   .menu-feature__copy h2 {
     max-width: 5.2ch;
-    font-size: clamp(52px, 16vw, 68px);
+    font-size: clamp(var(--fs-52), 16vw, var(--fs-68));
     line-height: .93;
   }
 
@@ -503,7 +503,7 @@
 
   .manifesto {
     min-height: 440px;
-    padding: 86px 24px 92px;
+    padding: var(--space-90) var(--space-24) var(--space-90);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -511,7 +511,7 @@
   }
 
   .manifesto__small {
-    margin: 0 0 26px;
+    margin: 0 0 var(--space-26);
     text-align: left;
   }
 
@@ -519,7 +519,7 @@
     max-width: 100%;
     margin-top: 0;
     margin-left: auto;
-    font-size: clamp(48px, 14.7vw, 66px);
+    font-size: clamp(var(--fs-48), 14.7vw, var(--fs-68));
     line-height: .96;
     letter-spacing: -.06em;
     text-align: right;
@@ -528,7 +528,7 @@
 
   .manifesto__mark {
     right: -50px;
-    font-size: 70px;
+    font-size: var(--fs-72);
   }
 
   .home-feature {
@@ -541,22 +541,22 @@
   }
 
   .home-feature__copy h2 {
-    font-size: clamp(52px, 16vw, 70px);
+    font-size: clamp(var(--fs-52), 16vw, var(--fs-72));
   }
 
   .visit {
     min-height: 640px;
-    padding: 58px 22px;
+    padding: var(--space-56) var(--space-22);
   }
 
   .visit__card {
     width: 100%;
-    padding: 40px 28px 30px;
+    padding: var(--space-40) var(--space-28) var(--space-30);
   }
 
   .visit__card h2 {
-    margin-bottom: 32px;
-    font-size: clamp(46px, 14vw, 60px);
+    margin-bottom: var(--space-32);
+    font-size: clamp(var(--fs-48), 14vw, var(--fs-60));
     line-height: .92;
   }
 
@@ -566,14 +566,14 @@
   }
 
   .visit__details p {
-    font-size: 12px;
+    font-size: var(--fs-12);
     line-height: 1.8;
   }
 
   .visit .cta-button {
     min-height: 62px;
-    margin-top: 26px;
-    padding: 0 18px;
+    margin-top: var(--space-26);
+    padding: 0 var(--space-18);
   }
 }
 
