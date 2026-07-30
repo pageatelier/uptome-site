@@ -247,6 +247,9 @@
 
 .manifesto {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 740px;
   overflow: hidden;
   background: var(--paper);
@@ -391,7 +394,7 @@
     background-position: 58% center;
     background-size: cover;
 
-    transform: translateZ(0) scale(1.08);
+    transform: translateZ(0) scale(1.15);
     transform-origin: center center;
     animation: hero-slow-zoom 7s cubic-bezier(.22, 1, .36, 1) forwards;
     will-change: transform;

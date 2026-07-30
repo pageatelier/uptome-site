@@ -36,7 +36,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    transform: translateZ(0) scale(1.05);
+    transform: translateZ(0) scale(1.15);
     transform-origin: center center;
     animation: hero-slow-zoom-mobile 7s
       cubic-bezier(.22, 1, .36, 1) forwards;
@@ -57,7 +57,7 @@
 
 @keyframes hero-slow-zoom-mobile {
   from {
-    transform: translateZ(0) scale(1.05);
+    transform: translateZ(0) scale(1.15);
   }
 
   to {
