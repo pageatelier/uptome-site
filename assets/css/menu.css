@@ -426,7 +426,7 @@
   .menu-intro h1 {
     max-width: 100%;
     margin: 0 0 0 ;
-    font-size: clamp(var(--fs-20), 8vw, var(--fs-30));
+    font-size: clamp(var(--fs-25), 8vw, var(--fs-33));
     line-height: 1.2;
     text-align: center;
   }
